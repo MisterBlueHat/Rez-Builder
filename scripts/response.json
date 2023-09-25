@@ -1,0 +1,828 @@
+{
+	"businesses": [
+		{
+			"id": "4GJ9B9IUeOYQtqfG_BYwlw",
+			"alias": "wendigo-stoughton",
+			"name": "Wendigo",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ilbS7coMJaNsdneALh-PdA/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/wendigo-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 157,
+			"categories": [
+				{
+					"alias": "bars",
+					"title": "Bars"
+				},
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.9165115356445,
+				"longitude": -89.2200698852539
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "121 E Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"121 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16082052775",
+			"display_phone": "(608) 205-2775",
+			"distance": 1028.2774757496966
+		},
+		{
+			"id": "XaVHqVByyKswE0wV-B0HRg",
+			"alias": "el-rio-grande-stoughton",
+			"name": "El Rio Grande",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lpAE0uENqViKCArmEIzuuA/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/el-rio-grande-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 107,
+			"categories": [
+				{
+					"alias": "mexican",
+					"title": "Mexican"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.91711,
+				"longitude": -89.22696
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "524 W Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"524 W Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088770160",
+			"display_phone": "(608) 877-0160",
+			"distance": 1078.229006817903
+		},
+		{
+			"id": "crBw_Hq3gCkppirgjnIl4A",
+			"alias": "famous-yetis-pizza-stoughton",
+			"name": "Famous Yeti's Pizza",
+			"image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BXp-dd-RELQdLh3453Uf9g/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/famous-yetis-pizza-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 94,
+			"categories": [
+				{
+					"alias": "pizza",
+					"title": "Pizza"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.9269045591354,
+				"longitude": -89.2225053906441
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "971 N Page St",
+				"address2": null,
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"971 N Page St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088771544",
+			"display_phone": "(608) 877-1544",
+			"distance": 179.696633118919
+		},
+		{
+			"id": "pHbUQRAYIbxZSxP3ThSAYQ",
+			"alias": "viking-brew-pub-stoughton",
+			"name": "Viking Brew Pub",
+			"image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/wvi_BHXGQsGJnRZfc6Jazw/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/viking-brew-pub-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 85,
+			"categories": [
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				},
+				{
+					"alias": "breweries",
+					"title": "Breweries"
+				}
+			],
+			"rating": 4.0,
+			"coordinates": {
+				"latitude": 42.916485,
+				"longitude": -89.218903
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "211 E Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"211 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16087195041",
+			"display_phone": "(608) 719-5041",
+			"distance": 1039.921595376096
+		},
+		{
+			"id": "tCdku8Xrba2xTlN1_TIBWA",
+			"alias": "koffee-kup-restaurant-stoughton",
+			"name": "Koffee Kup Restaurant",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/i4xCAAZNMjkKqKPGeeJ0eA/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/koffee-kup-restaurant-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 147,
+			"categories": [
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.91649,
+				"longitude": -89.21724
+			},
+			"transactions": [],
+			"price": "$",
+			"location": {
+				"address1": "355 E Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"355 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088736717",
+			"display_phone": "(608) 873-6717",
+			"distance": 1060.9030363870238
+		},
+		{
+			"id": "znlLoeBFMmAXCm3rCAb22A",
+			"alias": "sugar-and-spice-eatery-stoughton",
+			"name": "Sugar & Spice Eatery",
+			"image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/nARPxeA5HZgjwyg1IvmF0A/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/sugar-and-spice-eatery-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 38,
+			"categories": [
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				},
+				{
+					"alias": "desserts",
+					"title": "Desserts"
+				},
+				{
+					"alias": "delis",
+					"title": "Delis"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.91612,
+				"longitude": -89.23271
+			},
+			"transactions": [],
+			"price": "$",
+			"location": {
+				"address1": "317 Nora St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"317 Nora St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088739299",
+			"display_phone": "(608) 873-9299",
+			"distance": 1451.231886105781
+		},
+		{
+			"id": "jZAmylAK98iMzlXUE6T06g",
+			"alias": "deaks-pub-and-grill-stoughton",
+			"name": "Deak's Pub and Grill",
+			"image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/7F901pJl8ybMDRlmKkv8Ig/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/deaks-pub-and-grill-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 57,
+			"categories": [
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 3.5,
+			"coordinates": {
+				"latitude": 42.9272651672363,
+				"longitude": -89.2485580444336
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "1017 Nygaard St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"1017 Nygaard St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088734066",
+			"display_phone": "(608) 873-4066",
+			"distance": 2307.135841800047
+		},
+		{
+			"id": "IC5saghKdxIg37NE-gMsFw",
+			"alias": "wildwood-cafe-stoughton",
+			"name": "Wildwood Cafe",
+			"image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/cKmINP54U-pY4XCnrYzE0Q/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/wildwood-cafe-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 34,
+			"categories": [
+				{
+					"alias": "coffee",
+					"title": "Coffee & Tea"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.9170936,
+				"longitude": -89.2192875
+			},
+			"transactions": [],
+			"location": {
+				"address1": "218 S Forrest St",
+				"address2": "",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"218 S Forrest St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16087195016",
+			"display_phone": "(608) 719-5016",
+			"distance": 962.0083433021209
+		},
+		{
+			"id": "5NpmXRTEpi4ZOEK6LrYrGw",
+			"alias": "china-king-stoughton",
+			"name": "China King",
+			"image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/1-iRK-g8GSw49pijXhDcNA/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/china-king-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 35,
+			"categories": [
+				{
+					"alias": "chinese",
+					"title": "Chinese"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.9162149494946,
+				"longitude": -89.2203672297183
+			},
+			"transactions": [],
+			"price": "$",
+			"location": {
+				"address1": "319 S Division St",
+				"address2": "",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"319 S Division St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16082056666",
+			"display_phone": "(608) 205-6666",
+			"distance": 1060.3546924676398
+		},
+		{
+			"id": "Ug3Vx26eIrgUS5FJIPj-ng",
+			"alias": "banushis-bar-and-grill-stoughton",
+			"name": "Banushi's Bar and Grill",
+			"image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/359zCTs_24TCzzA6NXUJHQ/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/banushis-bar-and-grill-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 92,
+			"categories": [
+				{
+					"alias": "beer_and_wine",
+					"title": "Beer, Wine & Spirits"
+				},
+				{
+					"alias": "sportsbars",
+					"title": "Sports Bars"
+				},
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 3.5,
+			"coordinates": {
+				"latitude": 42.9265365600586,
+				"longitude": -89.2490386962891
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "800 Nygaard St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"800 Nygaard St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088733700",
+			"display_phone": "(608) 873-3700",
+			"distance": 2312.4816734005753
+		},
+		{
+			"id": "HxxhrD1Pddl9bUG5VlAWPw",
+			"alias": "fosdal-home-bakery-stoughton",
+			"name": "Fosdal Home Bakery",
+			"image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/p9oj5q2x7ztRVIVpnjy9Sw/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/fosdal-home-bakery-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 75,
+			"categories": [
+				{
+					"alias": "bakeries",
+					"title": "Bakeries"
+				},
+				{
+					"alias": "donuts",
+					"title": "Donuts"
+				},
+				{
+					"alias": "customcakes",
+					"title": "Custom Cakes"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.91648,
+				"longitude": -89.21856
+			},
+			"transactions": [],
+			"price": "$",
+			"location": {
+				"address1": "243 E Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"243 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088733073",
+			"display_phone": "(608) 873-3073",
+			"distance": 1040.7935047351823
+		},
+		{
+			"id": "I76dL-HO-4udC85eUVm1Qg",
+			"alias": "water-street-tavern-stoughton",
+			"name": "Water Street Tavern",
+			"image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Q8rYMIFgiHQfySkaGePtdQ/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/water-street-tavern-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 10,
+			"categories": [
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				},
+				{
+					"alias": "bars",
+					"title": "Bars"
+				}
+			],
+			"rating": 4.0,
+			"coordinates": {
+				"latitude": 42.916363639719265,
+				"longitude": -89.22190178854541
+			},
+			"transactions": [],
+			"location": {
+				"address1": "324 S Water St",
+				"address2": "",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"324 S Water St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16084804001",
+			"display_phone": "(608) 480-4001",
+			"distance": 1048.4660949630618
+		},
+		{
+			"id": "_yhCzAX7_qwBzPZWhWUZ4g",
+			"alias": "tailgaters-of-stoughton-stoughton",
+			"name": "Tailgaters of Stoughton",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hLWLD9MiWK0VyMtj0_zJzQ/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/tailgaters-of-stoughton-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 22,
+			"categories": [
+				{
+					"alias": "sportsbars",
+					"title": "Sports Bars"
+				},
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 4.0,
+			"coordinates": {
+				"latitude": 42.9165209735728,
+				"longitude": -89.2197329923511
+			},
+			"transactions": [],
+			"price": "$",
+			"location": {
+				"address1": "151 E Main St",
+				"address2": "",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"151 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16082056531",
+			"display_phone": "(608) 205-6531",
+			"distance": 1028.8201682981037
+		},
+		{
+			"id": "oKbjeaD9RuPhsmKW5lvY5A",
+			"alias": "viking-lanes-stoughton",
+			"name": "Viking Lanes",
+			"image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/pD_5sRYoIKvSo-jFTuW0UA/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/viking-lanes-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 13,
+			"categories": [
+				{
+					"alias": "bowling",
+					"title": "Bowling"
+				},
+				{
+					"alias": "sportsbars",
+					"title": "Sports Bars"
+				},
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 4.0,
+			"coordinates": {
+				"latitude": 42.919322,
+				"longitude": -89.237286
+			},
+			"transactions": [],
+			"location": {
+				"address1": "Hy 51 W",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"Hy 51 W",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088735959",
+			"display_phone": "(608) 873-5959",
+			"distance": 1530.996428159245
+		},
+		{
+			"id": "M7H9SGvE6Btmoyl0sKnt7w",
+			"alias": "autumn-pearl-stoughton",
+			"name": "Autumn Pearl",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/KQEfoJYxnxkpQ_P4r2YLVg/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/autumn-pearl-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 11,
+			"categories": [
+				{
+					"alias": "coffee",
+					"title": "Coffee & Tea"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.9165,
+				"longitude": -89.21948
+			},
+			"transactions": [],
+			"location": {
+				"address1": "175 E Main St",
+				"address2": "",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"175 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "",
+			"display_phone": "",
+			"distance": 1030.7540982417397
+		},
+		{
+			"id": "5FnObGIDEhVBs0lnLLiciA",
+			"alias": "fahrenheit-364-stoughton",
+			"name": "Fahrenheit 364",
+			"image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BlzY28MEf9uQZFkUiPajcQ/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/fahrenheit-364-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 20,
+			"categories": [
+				{
+					"alias": "lounges",
+					"title": "Lounges"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.9168103563693,
+				"longitude": -89.2169464095618
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "364 E Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"364 E Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16082052763",
+			"display_phone": "(608) 205-2763",
+			"distance": 1038.804527464856
+		},
+		{
+			"id": "kEdCejKhN7n8DZJriHKBlA",
+			"alias": "sunrise-family-restaurant-stoughton",
+			"name": "Sunrise Family Restaurant",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/EjfAtLOimF7x-X_tUZSi3Q/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/sunrise-family-restaurant-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 27,
+			"categories": [
+				{
+					"alias": "french",
+					"title": "French"
+				},
+				{
+					"alias": "noodles",
+					"title": "Noodles"
+				},
+				{
+					"alias": "breakfast_brunch",
+					"title": "Breakfast & Brunch"
+				}
+			],
+			"rating": 4.0,
+			"coordinates": {
+				"latitude": 42.91742,
+				"longitude": -89.23273
+			},
+			"transactions": [],
+			"price": "$",
+			"location": {
+				"address1": "1052 W Main St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"1052 W Main St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16088771930",
+			"display_phone": "(608) 877-1930",
+			"distance": 1350.53297149764
+		},
+		{
+			"id": "isSkNwNlfrIJy6QDzwS5aA",
+			"alias": "la-cantina-stoughton",
+			"name": "La Cantina",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Zu4izDRFxfD5eVkBCoWX2w/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/la-cantina-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 44,
+			"categories": [
+				{
+					"alias": "mexican",
+					"title": "Mexican"
+				}
+			],
+			"rating": 4.0,
+			"coordinates": {
+				"latitude": 42.92289833,
+				"longitude": -89.24967333
+			},
+			"transactions": [
+				"pickup"
+			],
+			"location": {
+				"address1": "620 Nygaard St",
+				"address2": "",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"620 Nygaard St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16084001266",
+			"display_phone": "(608) 400-1266",
+			"distance": 2381.469137946965
+		},
+		{
+			"id": "BxXKmfXQRz3XomV0HzpfFg",
+			"alias": "springers-stoughton",
+			"name": "Springers",
+			"image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2u58SopFFOAM2HuSHfgipw/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/springers-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 60,
+			"categories": [
+				{
+					"alias": "tradamerican",
+					"title": "American (Traditional)"
+				}
+			],
+			"rating": 3.5,
+			"coordinates": {
+				"latitude": 42.9793853759766,
+				"longitude": -89.243782043457
+			},
+			"transactions": [],
+			"price": "$$",
+			"location": {
+				"address1": "3097 Sunnyside St",
+				"address2": "",
+				"address3": "",
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"3097 Sunnyside St",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16082059300",
+			"display_phone": "(608) 205-9300",
+			"distance": 6262.731215335764
+		},
+		{
+			"id": "oqkEr4lS2wjbs3d4cBX7SQ",
+			"alias": "eat-at-joe-s-stoughton",
+			"name": "Eat at Joe\u2019s",
+			"image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/yCqS8_uS-B5VHN39LahfPw/o.jpg",
+			"is_closed": false,
+			"url": "https://www.yelp.com/biz/eat-at-joe-s-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+			"review_count": 11,
+			"categories": [
+				{
+					"alias": "japanese",
+					"title": "Japanese"
+				},
+				{
+					"alias": "foodtrucks",
+					"title": "Food Trucks"
+				}
+			],
+			"rating": 4.5,
+			"coordinates": {
+				"latitude": 42.916525,
+				"longitude": -89.220899
+			},
+			"transactions": [],
+			"location": {
+				"address1": "135 W Main St",
+				"address2": "Ste 107",
+				"address3": null,
+				"city": "Stoughton",
+				"zip_code": "53589",
+				"country": "US",
+				"state": "WI",
+				"display_address": [
+					"135 W Main St",
+					"Ste 107",
+					"Stoughton, WI 53589"
+				]
+			},
+			"phone": "+16082056304",
+			"display_phone": "(608) 205-6304",
+			"distance": 1031.6799592209093
+		}
+	],
+	"total": 65,
+	"region": {
+		"center": {
+			"longitude": -89.22065734863281,
+			"latitude": 42.925748592020554
+		}
+	}
+}
