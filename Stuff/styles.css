@@ -19,7 +19,7 @@ html, body{
     padding: 0;
   }
 
-footer{
+/*footer{
   background-color: black;
   position: absolute;
   display: flex;
@@ -27,7 +27,7 @@ footer{
   bottom: 0;
   left: 0;
   right: 0;
-}
+}*/
 
 .logo{
   text-align: left;
@@ -55,7 +55,7 @@ footer{
   margin-top: 20px;
 }
 
-footer li{
+/*footer li{
   color: white;
   list-style-type: none;
   margin-top: 0;
@@ -73,10 +73,35 @@ footer{
   margin-top: auto;
 }*/
 
-/*footer{
-  border: 1px solid red;
+footer{
+  background-color: black;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }*/
+
+/*footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid red;
+}*/
+
+footer ul li p{
+  text-align: right;
+  display: inline;
+  font-size: x-small;
+}
+
+.social-icons {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
