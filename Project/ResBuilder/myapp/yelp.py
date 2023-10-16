@@ -28,7 +28,14 @@ headers = {
 }
 
 #Fetch a response from the Yelp API
-response = requests.get(url, headers=headers)
 
+def response():
+    response_string = ""
+    response = requests.get(url, headers=headers).json()
+    for restaurant in response["businesses"]:
+       response_string += restaurant["name"] + "\n"
+    return response_string
+
+response()
 #Create a text file if it doesn't already exist and write the the fetched JSON to it. 
-with open('response.json', 'w') as f: json.dump(response.json(), f, indent="\t")
+#with open('response.json', 'w') as f: json.dump(response.json(), f, indent="\t")
