@@ -1,6 +1,6 @@
 import requests
 import json
-from restaurant import Restaurant as restaurant
+from myapp.scripts.restaurant import Restaurant as res 
 
 url = "https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20"
 
@@ -34,7 +34,7 @@ def response():
     response_table = []
     response = requests.get(url, headers=headers).json()
     for r in response["businesses"]:
-       response_table.append(restaurant(r["name"], r["location"]["city"], r["rating"], r["id"]))
+       response_table.append(res(r["name"], r["location"]["city"], r["rating"], r["id"]))
     return response_table
 
 #Create a text file if it doesn't already exist and write the the fetched JSON to it. 
