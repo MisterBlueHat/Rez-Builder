@@ -9,10 +9,12 @@ import json
 # Create your views here.
 
 def home(request):
-	return HttpResponse("Home")
+	template = loader.get_template("templates/index.html")
+	return HttpResponse(template.render())
 
 def filter(request):
-	return HttpResponse(response())
+	template = loader.get_template("templates/filter.html")
+	return HttpResponse(template.render())
 
 def landing(request):
 	return HttpResponse("Landing")

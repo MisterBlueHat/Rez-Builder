@@ -1,5 +1,5 @@
 body {
-    background-image: url("food.jpg");
+    background: url("/static/images/food.jpg");
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     text-align: center;
