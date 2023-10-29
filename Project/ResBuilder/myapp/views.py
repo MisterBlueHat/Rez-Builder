@@ -17,7 +17,8 @@ def filter(request):
 	return HttpResponse(template.render())
 
 def landing(request):
-	return HttpResponse("Landing")
+	template = loader.get_template("templates/landing.html")
+	return HttpResponse(template.render())
 
 def var_test(request):
 	template = loader.get_template("templates/var_test.html")
