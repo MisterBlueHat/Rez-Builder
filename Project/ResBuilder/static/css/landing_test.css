@@ -1,0 +1,36 @@
+body h1 {
+    font-size: 50px;
+    text-align: center;
+    position: relative; 
+    top: 0px;
+    left: 0px;
+    color: rgb(0, 0, 0);
+    background-color: #45b1ff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body h2 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header_image img {
+    width: 100%;
+    max-height: 500px;
+    float: left;
+    object-fit: cover;
+    padding-bottom: 2em;
+}
+
+.sidebar {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    justify-content: right;
+}
+
+.blurb{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+    position: static;
+    top: 20em;
+}

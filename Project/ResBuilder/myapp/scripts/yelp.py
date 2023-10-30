@@ -6,7 +6,7 @@ url = "https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20"
 
 #Parameters for restaurant selection
 parameters = {
-    "location": "Stoughton",
+    "location": "Boston",
     "latitude": "",
     "longitude": "",
     "term": "",
@@ -34,7 +34,7 @@ def response():
     response_table = []
     response = requests.get(url, headers=headers).json()
     for r in response["businesses"]:
-       response_table.append(res(r["name"], r["location"]["city"], r["rating"], r["id"]))
+       response_table.append(res(r["name"], r["location"]["city"], r["rating"], r["id"],  r["url"], r["display_phone"], r["location"]["address1"], r["image_url"]))
     return response_table
 
 #Create a text file if it doesn't already exist and write the the fetched JSON to it. 

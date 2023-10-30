@@ -20,6 +20,20 @@ def landing(request):
 	template = loader.get_template("templates/landing.html")
 	return HttpResponse(template.render())
 
+def landing_test(request):
+	template = loader.get_template("templates/landing_test.html")
+	restaurant_pick = response()[random.randrange(len(response()))]
+	context = {
+		'rest_name': restaurant_pick.name,
+		'rest_city': restaurant_pick.city,
+		'rest_rating': restaurant_pick.rating,
+		'rest_site': restaurant_pick.website,
+		'rest_phone': restaurant_pick.phone,
+		'rest_addr': restaurant_pick.address,
+		'rest_img': restaurant_pick.image,
+	}
+	return HttpResponse(template.render(context, request))
+
 def var_test(request):
 	template = loader.get_template("templates/var_test.html")
 	restaurant_pick = response()[random.randrange(len(response()))]
