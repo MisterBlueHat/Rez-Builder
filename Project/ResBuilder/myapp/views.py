@@ -1,8 +1,9 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
 from myapp.scripts.yelp import response
-import random
+from .forms import InputForm 
 
+import random
 import requests
 import json
 
@@ -13,8 +14,13 @@ def home(request):
 	return HttpResponse(template.render())
 
 def filter(request):
-	template = loader.get_template("templates/filter.html")
-	return HttpResponse(template.render())
+	context ={}
+	context['form']= InputForm()
+	template = loader.get_template("templates/filter.html")	
+	data = {request.POST.get('zip_code'), request.POST.get('max_distance'), request.POST.get('cuisine')}
+	print(data)
+    # Check if you get the value
+	return HttpResponse(template.render(context, request))
 
 def landing(request):
 	template = loader.get_template("templates/landing.html")

@@ -9,30 +9,12 @@
 </head>
 <body>
     <div class="filter-box">
-        <h2>Filters</h2>
-        <form>
-            <label for="location">Enter your Zip Code:</label>
-            <input type="text" id="location" name="location" placeholder="Zip Code" required>
-            
-            <label for="cuisine">Select cuisine:</label>
-            <select id="cuisine" name="cuisine">
-                <option value="any">Any</option>
-                <option value="italian">Italian</option>
-                <option value="mexican">Mexican</option>
-                <option value="chinese">Chinese</option>
-                <option value="chinese">Greek</option>
-                <option value="chinese">Spanish</option>
-                <option value="chinese">Thai</option>
-                <option value="chinese">American</option>
-                <!-- Add more cuisine options as needed -->
-            </select>
-
-            <label for="distance">Maximum distance (miles):</label>
-            <input type="number" id="distance" name="distance" min="1" max="100" step="1" value="10">
-            
-            <input type="submit" value="Submit">
-            <    
-        </form>
+        <h2>Filters</h2>    
+        <form action = "" method = "post"> 
+            {% csrf_token %} 
+            {{form }} 
+            <input type="submit" value=Submit> 
+        </form> 
     </div>
 </body>
     
