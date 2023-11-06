@@ -24,19 +24,28 @@ def filter(request):
 
 def landing(request):
 	template = loader.get_template("templates/landing.html")
-	return HttpResponse(template.render())
+	context = {
+		'rest_name': "Wendigo",
+		'rest_city': "Stoughton",
+		'rest_rating': 4.5,
+		'rest_site': "https://www.yelp.com/biz/wendigo-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+		'rest_phone': "(608) 205-2775",
+		'rest_addr': "121 E Main St",
+		'rest_img': "https://s3-media1.fl.yelpcdn.com/bphoto/ilbS7coMJaNsdneALh-PdA/o.jpg",
+	}
+	return HttpResponse(template.render(context, request))
 
 def landing_test(request):
 	template = loader.get_template("templates/landing_test.html")
 	restaurant_pick = response()[random.randrange(len(response()))]
 	context = {
-		'rest_name': restaurant_pick.name,
-		'rest_city': restaurant_pick.city,
-		'rest_rating': restaurant_pick.rating,
-		'rest_site': restaurant_pick.website,
-		'rest_phone': restaurant_pick.phone,
-		'rest_addr': restaurant_pick.address,
-		'rest_img': restaurant_pick.image,
+		'rest_name': "Wendigo",
+		'rest_city': "Stoughton",
+		'rest_rating': 4.5,
+		'rest_site': "https://www.yelp.com/biz/wendigo-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+		'rest_phone': "(608) 205-2775",
+		'rest_addr': "121 E Main St",
+		'rest_img': "https://s3-media1.fl.yelpcdn.com/bphoto/ilbS7coMJaNsdneALh-PdA/o.jpg",
 	}
 	return HttpResponse(template.render(context, request))
 
