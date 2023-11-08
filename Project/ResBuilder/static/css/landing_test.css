@@ -43,27 +43,26 @@ body h1 {
 
 body h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-div.restpic { 
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-    padding-bottom: 2em;
+.restpic img { 
+    float: left;
+    width: 300px;
+    height: 300px;
 }
 
 .sidebar {
     color: rgb(0, 0, 0);
     font-size: 20px;
-    justify-content: right;
     background: white;
+    padding-top: 20px;
+    float: left;
 }
 
 .blurb{
     color: rgb(0, 0, 0);
     font-size: 15px;
     text-align: center;
-    position: static;
-    top: 20em;
+    float: left;
 }
