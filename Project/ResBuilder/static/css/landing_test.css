@@ -29,9 +29,18 @@ body {
     background: url("/static/images/food.jpg") no-repeat center fixed;
     background-size: cover;
 }
+body {
+    background: url("/static/images/food.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
 body h1 {
+<<<<<<< HEAD
+    font-size: 50px;
+=======
     font-size: 30px;
+>>>>>>> 043c1e81529cac3051fe4f63de6dfa3e605d75c8
     text-align: center;
     position: relative; 
     top: 0px;
