@@ -36,11 +36,8 @@ body {
 }
 
 body h1 {
-<<<<<<< HEAD
     font-size: 50px;
-=======
     font-size: 30px;
->>>>>>> 043c1e81529cac3051fe4f63de6dfa3e605d75c8
     text-align: center;
     position: relative; 
     top: 0px;
@@ -55,7 +52,7 @@ body h2 {
     font-size: 40px;
 }
 
-div.restpic { 
+.restpic { 
     width: 50px;
     height: 50px;
     padding: 20px;
