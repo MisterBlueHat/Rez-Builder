@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
 
-<head><link rel="stylesheet" href="{% static 'css/landing_test.css' %}"></head>
+<head>
+	<link rel="stylesheet" href="{% static 'css/landing_test.css' %}">
+</head>
 <title>Landing</title>
 <body>
     <header class="header">
@@ -15,19 +17,19 @@
         </nav>
     </header>
 	<h1>Welcome to {{rest_name}}!</h1>
+	<div class ="blurb">
+		<p>{{rest_name}} is a restaurant located in {{rest_city}}</p>
+	</div>
 	<h2>Average rating is {{rest_rating}} stars</h2>
 	<div class ="restpic">
 		<img src="{{rest_img}}">
 	</div>	
 	<div class ="sidebar">
 		<ul>
-			<li>Website:  <a href="{{rest_site}}">Link</a> </li>
+			<li>Website: <a href="{{rest_site}}">Link</a> </li>
 			<li>Phone: {{rest_phone}}</li>
 			<li>Address: {{rest_addr}}</li>	
 		</ul>
-	</div>
-	<div class ="blurb">
-		<h2>{{rest_name}} is a restaurant located in {{rest_city}}</h2>
 	</div>
 	
 </body>
