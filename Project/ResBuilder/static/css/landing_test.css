@@ -2,22 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 .header  {
-    font-size: 25px;
-    text-align: center;
-    position: relative; 
-    top: 0px;
-    left: 0px;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    position: fixed; 
+    width: 100%;
     color: rgb(0, 0, 0);
     font-family: 'Work Sans', sans-serif;
     background: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
 }
 
-.navbar {
-    text-align: right;
-    background: orange;
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 }
+
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
 
 body {
     background: url("/static/images/food.jpg") no-repeat center fixed;
@@ -29,7 +64,7 @@ body h1 {
     font-size: 50px;
     text-align: center;
     position: relative; 
-    top: 0px;
+    top: 45px;
     left: 0px;
     color: rgb(0, 0, 0);
     background-color: red;
@@ -43,6 +78,7 @@ body h2 {
     text-align: center;
     padding-top: 10px;
     background: pink;
+    top: 60px;
 }
 
 .restpic {
@@ -57,6 +93,7 @@ body h2 {
     position: absolute;
     width: 50%;
     height: 50%;
+    top: 100px;
 }
 
 .sidebar {
@@ -71,7 +108,38 @@ body h2 {
     font-size: 50px;
     text-align: center;
     float: left;
-    padding-top: 10px;
     font-weight: bold;
     background: yellow;
+    top: 30px;
+}
+
+.container .box { 
+    width: 720px; 
+    margin:50px; 
+    display:table; 
+} 
+.container-box-h3 {
+    text-align: center;
+    font-size: 32px;
+}
+.container .box .box-row { 
+    display:table-row; 
+} 
+.container .box .box-cell { 
+    display:table-cell; 
+    width:33%; 
+    padding:10px; 
+} 
+.container .box .box-cell.box1 { 
+    background:green; 
+    color:white; 
+    text-align:justify; 
+} 
+.container .box .box-cell.box2 { 
+    background:lightgreen; 
+    text-align:justify 
+} 
+.container .box .box-cell.box3 { 
+    background:lime; 
+    text-align:justify; 
 }
