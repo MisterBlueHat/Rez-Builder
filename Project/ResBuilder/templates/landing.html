@@ -15,55 +15,66 @@
             <a href="#">Contact</a>
             <a href="#">Terms of Service</a>
         </nav>
+
     </header>
-	<h1>Welcome to {{rest_name}}!</h1>
-	<div class ="blurb">
-		<p>{{rest_name}} is a restaurant located in {{rest_city}}</p>
+<div id="flexbox">
+	<div class ="flexitem"> 
+		<h1>Welcome to {{rest_name}}!</h1>
+			<h1>{{rest_name}} is a restaurant located in {{rest_city}}</h1>
+			<h2>Average rating is {{rest_rating}} stars</h2>
+			<ul>
+				<h1>Restaurant Information</h1>
+				<li>Website: <a href="{{rest_site}}">Link</a> </li>
+				<li>Phone: {{rest_phone}}</li>
+				<li>Address: {{rest_addr}}</li>	
+			</ul>
 	</div>
-	<h2>Average rating is {{rest_rating}} stars</h2>
-	<div class ="restpic">
-		<img src="{{rest_img}}">
+	<div class ="flexitem">
+			<img src="{{rest_img}}">
 	</div>	
-	<div class ="sidebar">
-		<ul>
-			<h3>Restaurant Information</h3>
-			<li>Website: <a href="{{rest_site}}">Link</a> </li>
-			<li>Phone: {{rest_phone}}</li>
-			<li>Address: {{rest_addr}}</li>	
-		</ul>
+	<div class="flexitem"> 
+		<div class="flexR"> 
+			<h3>{{rest_name}} Reviews!</h3> 
+		</div>
+	<div class="flexitem"> 
+		<p>Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+		</p>
 	</div>
-	<div class="container"> 
-		<div class="box"> 
-			<h3>Restaurant Reviews!</h3>
-			<div class="box-row"> 
-				<div class="box-cell box1"> 
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-				</div> 
-				 
-				<div class="box-cell box2"> 
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-				</div> 
-				 
-				<div class="box-cell box3"> 
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-				</div> 
-			</div> 
-		</div> 
+	<div class="flexitem"> 
+		<p>
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+		</p>
+	</div>
+	<div class="flexitem"> 
+		<p>
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			
+		</p>
+			
+	</div>
+	</div>  
 	</div> 
+</div>
 </body>
 </html>

@@ -60,86 +60,48 @@ body {
 
 }
 
-body h1 {
-    font-size: 50px;
-    text-align: center;
-    position: relative; 
-    top: 45px;
-    left: 0px;
-    color: rgb(0, 0, 0);
-    background-color: red;
-    font-family: 'Work Sans', sans-serif;
+
+#flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: 2px solid #333;
+    margin-bottom: 10px;
 }
 
-body h2 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 50px;
-    position: absolute;
+#flexbox .flexitem {
+    margin-top: 40px;
+    flex: 1;
+    background-color: transparent;
     text-align: center;
-    padding-top: 10px;
-    background: pink;
-    top: 60px;
+    color: white;
+    font-size: 30px;
+    border: 2px solid #333;
+
 }
 
-.restpic {
-    display: inline-block;
-    margin: auto;
-    width: 50%;
-    clear: both;
-    margin-top: 300px;
+#flexbox .flexitem img {
+    flex: 1 1 0;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: transparent;
     text-align: center;
-}
-.restpic img { 
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 100px;
+    color: white;
 }
 
-.sidebar {
-    float: right;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    background: green;
+#flexbox .flexitem-h3 {
+    font-size: 22px;
 }
 
-.blurb{
-    color: rgb(0, 0, 0);
-    font-size: 50px;
+#flexbox .flexitem p{
+    flex: 1 1 0;
+    background-color: transparent;
     text-align: center;
-    float: left;
-    font-weight: bold;
-    background: yellow;
-    top: 30px;
-}
+    color: white;
+    font-size: 25x;
+    border: 4px solid #333;
+    background-color: black;
+    max-height: 240px;
+    overflow-y: auto;
 
-.container .box { 
-    width: 720px; 
-    margin:50px; 
-    display:table; 
-} 
-.container-box-h3 {
-    text-align: center;
-    font-size: 32px;
-}
-.container .box .box-row { 
-    display:table-row; 
-} 
-.container .box .box-cell { 
-    display:table-cell; 
-    width:33%; 
-    padding:10px; 
-} 
-.container .box .box-cell.box1 { 
-    background:green; 
-    color:white; 
-    text-align:justify; 
-} 
-.container .box .box-cell.box2 { 
-    background:lightgreen; 
-    text-align:justify 
-} 
-.container .box .box-cell.box3 { 
-    background:lime; 
-    text-align:justify; 
 }
