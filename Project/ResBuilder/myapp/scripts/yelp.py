@@ -25,7 +25,7 @@ print(url,"/n")
 
 headers = {
     "accept": "application/json",
-    "Authorization": 'Bearer FoZr_sHH0IZ981_y58GdqRaLaKIzIc76HJuXhxbspj6oG8_Sd_Inx7WoFptaTjAitdmCpxLougxgzASnvpc9CgaRNhLsf0x3uWkkaUIDxlQHIGUC95e6JEqsJp8PZXYx'
+    "Authorization": 'Bearer GTqVWtOkg5Wx8XtcLeNoSmmv06jZ-gicMXW_mSfLD2ALgj3OL6jW300b9m3lOaIhoDLcMdSMdExM3vOJAgqwGiwiKtRpcD-7Y-3lyjSEF7Jzk3bGeSEwn0tS9xNAZXYx'
 }
 
 #Fetch a response from the Yelp API

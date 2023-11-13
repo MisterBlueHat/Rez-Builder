@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="% static 'css/styles2.css' %">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Rez Builder</title>
 </head>
 <body>
@@ -15,5 +14,15 @@
             {{form }} 
             <input type="submit" value=Submit> 
         </form> 
+    </div>
+    <div class="restaurants">
+        <h2>Restaurants</h2>    
+        {% for restaurant in restaurants %}
+            <div class="restbox">
+                <h2>{{restaurant.name}}</h2>
+                    {{restaurant.address}}
+                    , {{restaurant.city}}
+            </div>
+        {% endfor %}
     </div>
 </body>
