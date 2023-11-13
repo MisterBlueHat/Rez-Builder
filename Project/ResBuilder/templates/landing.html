@@ -4,6 +4,7 @@
 
 <head>
 	<link rel="stylesheet" href="{% static 'css/landing_test.css' %}">
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMiDBzFBTy41UHfZqx3q_16kZgA-DcqXc&callback=initMap" type="text/javascript"></script>
 </head>
 <title>Landing</title>
 <body>
@@ -21,13 +22,27 @@
 	<div class ="flexitem"> 
 		<h1>Welcome to {{rest_name}}!</h1>
 			<h1>{{rest_name}} is a restaurant located in {{rest_city}}</h1>
-			<h2>Average rating is {{rest_rating}} stars</h2>
+			<h1>The Average rating is {{rest_rating}} stars</h1>
 			<ul>
 				<h1>Restaurant Information</h1>
 				<li>Website: <a href="{{rest_site}}">Link</a> </li>
 				<li>Phone: {{rest_phone}}</li>
 				<li>Address: {{rest_addr}}</li>	
 			</ul>
+		<div id="map" style = "clear:both; height:200px;"></div>
+		<script>
+			// Initialize the map
+			function initMap() {
+			  // Specify the center and zoom level
+			  var mapOptions = {
+				center: { lat: 42.3601, lng: -71.0589},
+				zoom: 13
+			  };
+		  
+			  // Create the map
+			  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			}
+		  </script>
 	</div>
 	<div class ="flexitem">
 			<img src="{{rest_img}}">
@@ -43,10 +58,29 @@
 			Rest_reviews11Rest_reviews1Rest_reviews1
 			Rest_reviews1Rest_reviews1Rest_reviews
 			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			
 		</p>
 	</div>
 	<div class="flexitem"> 
 		<p>
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
+			Rest_reviews1Rest_reviews1Rest_reviews
+			Rest_reviews11Rest_reviews1Rest_reviews1
 			Rest_reviews1Rest_reviews1Rest_reviews
 			Rest_reviews11Rest_reviews1Rest_reviews1
 			Rest_reviews1Rest_reviews1Rest_reviews
