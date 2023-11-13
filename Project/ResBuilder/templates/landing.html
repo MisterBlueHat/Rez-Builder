@@ -31,11 +31,13 @@
 			</ul>
 		<div id="map" style = "clear:both; height:200px;"></div>
 		<script>
+			const currentUrl = window.location.href;
+			let params = (new URL(currentUrl)).searchParams;
 			// Initialize the map
 			function initMap() {
 			  // Specify the center and zoom level
 			  var mapOptions = {
-				center: { lat: 42.3601, lng: -71.0589},
+				center: new google.maps.LatLng(parseInt(params.get('lat')), parseInt(params.get('lon'))),
 				zoom: 13
 			  };
 		  
@@ -103,9 +105,7 @@
 			Rest_reviews11Rest_reviews1Rest_reviews1
 			Rest_reviews1Rest_reviews1Rest_reviews
 			Rest_reviews11Rest_reviews1Rest_reviews1
-			
-		</p>
-			
+		</p>		
 	</div>
 	</div>  
 	</div> 

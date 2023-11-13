@@ -1,6 +1,6 @@
 class Restaurant ():
 
-    def __init__(self, name, city, rating, id, website, phone, address, image):
+    def __init__(self, name, city, rating, id, website, phone, address, image, coords):
         self.name = name
         self.city = city
         self.rating = rating
@@ -9,6 +9,7 @@ class Restaurant ():
         self.phone = phone
         self.address = address
         self.image = image
+        self.coords = coords
 
     def __str__(self):
         return self.name

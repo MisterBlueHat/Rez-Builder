@@ -16,14 +16,13 @@ def home(request):
 	return HttpResponse(template.render())
 
 def filter(request):
-	context ={
+	if request.POST:
+		context ={
 		'form' : InputForm(),
-		'restaurants' : response()
-	}
+		'restaurants' : response(request.POST.get('city'))
+		}
 	loaded_restaurants = context['restaurants']
 	template = loader.get_template("templates/filter.html")	
-	data = {request.POST.get('zip_code'), request.POST.get('max_distance'), request.POST.get('cuisine')}
-	print(data)
     # Check if you get the value
 	return HttpResponse(template.render(context, request))
 
@@ -37,6 +36,8 @@ def landing(request):
 		'rest_phone': request.GET.get('phone', ''),
 		'rest_addr': request.GET.get('addr', ''),
 		'rest_img': request.GET.get('img', ''),
+		'rest_lat': request.GET.get('lat', ''),
+		'rest_lon': request.GET.get('lon', ''),
 	}
 	return HttpResponse(template.render(context, request))
 
