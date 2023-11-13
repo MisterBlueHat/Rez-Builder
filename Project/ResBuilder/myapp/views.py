@@ -14,8 +14,10 @@ def home(request):
 	return HttpResponse(template.render())
 
 def filter(request):
-	context ={}
-	context['form']= InputForm()
+	context ={
+		'form' : InputForm(),
+		'restaurants' : response()
+	}
 	template = loader.get_template("templates/filter.html")	
 	data = {request.POST.get('zip_code'), request.POST.get('max_distance'), request.POST.get('cuisine')}
 	print(data)
