@@ -14,8 +14,8 @@
     </div>
     <div class="restaurants">
         <h2>Restaurants</h2>    
-        {% for restaurant in restaurants %}
-            <a href="{% url 'landing' %}?name={{restaurant.name}}&city={{restaurant.city}}&rating={{restaurant.rating}}&site={{restaurant.website}}&phone={{restaurant.phone}}&addr={{restaurant.address}}&img={{restaurant.image}}&lat={{restaurant.coords.latitude}}&lon={{restaurant.coords.longitude}}">
+        {% for id, restaurant in restaurants.items %}
+            <a href="{% url 'landing' %}?id={{restaurant.id}}">
                 <div class="restbox">
                     <h2>{{restaurant.name}}</h2>
                         {{restaurant.address}}
