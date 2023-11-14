@@ -9,7 +9,7 @@ import json
 
 loaded_restaurants = {}
 # Create your views here.
-
+# This is a test to make sure commits work
 def home(request):
 	template = loader.get_template("templates/index.html")
 	return HttpResponse(template.render())
