@@ -1,25 +1,25 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
-from myapp.scripts.yelp import response, detailed_response
+from myapp.scripts.yelp import response
+from myapp.models import Restaurant
 from .forms import InputForm 
 
 import random
 import requests
 import json
 
-loaded_restaurants = {}
 # Create your views here.
-# This is a test to make sure commits work
 def home(request):
 	template = loader.get_template("templates/index.html")
 	return HttpResponse(template.render())
 
 def filter(request):
 	if request.POST:
-		loaded_restaurants = response(request.POST.get('city'))
+		response(request.POST.get('city'))
+		print(Restaurant.objects.all().values())
 		context ={
 		'form' : InputForm(),
-		'restaurants' : loaded_restaurants
+		'restaurants' : request.session['loaded_restaurants']
 		}
 	else:
 		context ={
@@ -33,17 +33,17 @@ def landing(request):
 	template = loader.get_template("templates/landing.html")
 	rest_id = request.GET.get('id', '')
 	print(rest_id)
-	rest = detailed_response(rest_id)
+	rest = request.session['loaded_restaurants'][rest_id]
 	context = {
 		'rest_id': rest_id,
-		'rest_city': rest["location"]["city"],
-		'rest_rating': rest["rating"],
-		'rest_site': rest["url"],
-		'rest_phone': rest["phone"],
-		'rest_addr': rest["location"]["address1"],
-		'rest_img': rest["image_url"],
-		'rest_lat': rest["coordinates"]["latitude"],
-		'rest_lon': rest["coordinates"]["longitude"],
+		'rest_city': rest.city,
+		'rest_rating': rest.rating,
+		'rest_site': rest.site,
+		'rest_phone': rest.phone,
+		'rest_addr': rest.address,
+		'rest_img': rest.image,
+		'rest_lat': rest.lat,
+		'rest_lon': rest.lon,
 	}
 	return HttpResponse(template.render(context,request))
 
