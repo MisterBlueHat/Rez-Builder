@@ -63,3 +63,19 @@ def landing_test(request):
 def var_test(request):
 	template = loader.get_template("templates/var_test.html")
 	return HttpResponse(template.render(request))
+
+# views.py 
+
+from .models import Restaurant
+
+def restaurant_reviews(request, restaurant_id):
+    restaurant = Restaurant.objects.get(id=restaurant_id)
+    reviews = restaurant.Reviews(restaurant_id)
+    
+    reviews_data = reviews.get_reviews()
+    
+    context = {
+        'reviews': reviews_data
+    }
+    
+    return render(request, 'reviews.html', context)
