@@ -1,3 +1,60 @@
-.restbox {
+/*.restbox {
 	background-color: aquamarine;
+}*/
+
+html, body{
+    height: 100%;
+}
+body {
+    background-image: url("../images/food.jpg");
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#prefs label{
+    display: block;
+    margin-top: 10px;
+}
+
+.form{
+    display: inline-block;
+}
+
+.filter-box{
+    width: 25%;
+    padding: 20px;
+    height: 240px;
+    background-color:grey;
+    margin-left: 0;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.form-controls{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+#submit{
+    margin-right: 10px;
+	display: flex;
+	justify-content: start;
+	margin-top: 10px;
+}
+.restaurants{
+    float: right;
+    width: 75%;
+    padding: 20px;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.restaurants h2{
+	text-align: center;
 }
