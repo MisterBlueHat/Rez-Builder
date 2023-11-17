@@ -32,18 +32,14 @@ def filter(request):
 def landing(request):
 	template = loader.get_template("templates/landing.html")
 	rest_id = request.GET.get('id', '')
-	print(rest_id)
-	rest = request.session['loaded_restaurants'][rest_id]
 	context = {
-		'rest_id': rest_id,
-		'rest_city': rest.city,
-		'rest_rating': rest.rating,
-		'rest_site': rest.site,
-		'rest_phone': rest.phone,
-		'rest_addr': rest.address,
-		'rest_img': rest.image,
-		'rest_lat': rest.lat,
-		'rest_lon': rest.lon,
+		'rest_name': "Wendigo",
+		'rest_city': "Stoughton",
+		'rest_rating': 4.5,
+		'rest_site': "https://www.yelp.com/biz/wendigo-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
+		'rest_phone': "(608) 205-2775",
+		'rest_addr': "121 E Main St",
+		'rest_img': "https://s3-media1.fl.yelpcdn.com/bphoto/ilbS7coMJaNsdneALh-PdA/o.jpg",
 	}
 	return HttpResponse(template.render(context,request))
 
