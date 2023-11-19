@@ -75,3 +75,16 @@ def restaurant_reviews(request, restaurant_id):
     }
     
     return render(request, 'reviews.html', context)
+
+def About(request):
+	template = loader.get_template("templates/About.html")
+	return HttpResponse(template.render())
+
+def TOS(request):
+	template = loader.get_template("templates/TOS.html")
+	return HttpResponse(template.render())
+
+def Contact(request):
+	template = loader.get_template("templates/CONTACT.html")
+	return HttpResponse(template.render())
+

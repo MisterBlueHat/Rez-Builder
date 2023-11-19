@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/About.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/About.css' %}">
+    <title>About</title>
+</head>
+<header class="header">
+    <a href="#" class="logo">ResBuilder</a> 
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="{% url 'Contact' %}">Contact</a>
+        <a href="{% url 'TOS' %}">Terms of Service</a>
+    </nav>
+
+</header>
+<body>
+    
+</body>
+</html>
