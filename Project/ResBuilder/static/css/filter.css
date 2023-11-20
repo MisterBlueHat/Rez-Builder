@@ -16,6 +16,10 @@ body {
     height: 100%;
 }
 
+.restbox{
+    background-color:grey;
+}
+
 #prefs label{
     display: block;
     margin-top: 10px;
