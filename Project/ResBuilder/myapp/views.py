@@ -15,6 +15,8 @@ def home(request):
 
 def filter(request):
 	if request.POST:
+		Restaurant.objects.all().delete()
+		response(request.POST.get('city'))
 		context ={
 		'form' : InputForm(),
 		'restaurants' : Restaurant.objects.all()
@@ -30,15 +32,15 @@ def filter(request):
 def landing(request):
 	template = loader.get_template("templates/landing.html")
 	rest_id = request.GET.get('id', '')
-	rest_pick = Restaurant.get(pk=rest_id)
+	rest_pick = Restaurant.objects.get(pk=rest_id)
 	context = {
-		'rest_name': "Wendigo",
-		'rest_city': "Stoughton",
-		'rest_rating': 4.5,
-		'rest_site': "https://www.yelp.com/biz/wendigo-stoughton?adjust_creative=EVUuU37E7M-yE3h-cridyw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=EVUuU37E7M-yE3h-cridyw",
-		'rest_phone': "(608) 205-2775",
-		'rest_addr': "121 E Main St",
-		'rest_img': "https://s3-media1.fl.yelpcdn.com/bphoto/ilbS7coMJaNsdneALh-PdA/o.jpg",
+		'rest_name': rest_pick.name,
+		'rest_city': rest_pick.city,
+		'rest_rating': rest_pick.rating,
+		'rest_site': rest_pick.site,
+		'rest_phone': rest_pick.phone,
+		'rest_addr': rest_pick.address,
+		'rest_img': rest_pick.image,
 	}
 	return HttpResponse(template.render(context,request))
 
