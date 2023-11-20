@@ -34,6 +34,7 @@ def response(city):
         restaurant = Restaurant(
             id=r["id"], 
             name=r["name"], 
+            city=r["location"]["city"], 
             rating=r["rating"], 
             site=r["url"], 
             phone=r["display_phone"], 

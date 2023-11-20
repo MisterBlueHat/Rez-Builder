@@ -15,11 +15,9 @@ def home(request):
 
 def filter(request):
 	if request.POST:
-		response(request.POST.get('city'))
-		print(Restaurant.objects.all().values())
 		context ={
 		'form' : InputForm(),
-		'restaurants' : request.session['loaded_restaurants']
+		'restaurants' : Restaurant.objects.all()
 		}
 	else:
 		context ={
@@ -32,6 +30,7 @@ def filter(request):
 def landing(request):
 	template = loader.get_template("templates/landing.html")
 	rest_id = request.GET.get('id', '')
+	rest_pick = Restaurant.get(pk=rest_id)
 	context = {
 		'rest_name': "Wendigo",
 		'rest_city': "Stoughton",
