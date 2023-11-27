@@ -15,7 +15,21 @@ body {
     flex-direction: row;
     height: 100%;
 }
+.header  {
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Work Sans', sans-serif;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 
+}
 .restbox{
     background-color:grey;
 }
