@@ -62,4 +62,13 @@ class Restaurant(models.Model):
         api_key = "UgaYzODUIn9ve-se0d6J1eKoFFYNyrFtkBybJ0JDJ1jeKNQG_6xOUN_BL30cleMd897fM4YF-wFCVq-Cf0PMOV8eeiAAZfbkeO2F5W_DWHaTY1YvSU5VjlJq2Ss4ZXYx"
         location = "Boston" # I added a location to perform search query results
         search_restaurants(location, api_key) # This function will perform search query results
+        
+logger = logging.getLogger(__name__)
 
+def landing(request):
+    try:
+        # Error handling code to display landing page
+        return render(request, 'landing.html')
+    except Exception as e:
+        logger.error("Error loading landing page", exc_info=True)
+        return HttpResponseServerError("Oops, something went wrong. Please try again later.")
