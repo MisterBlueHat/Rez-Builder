@@ -66,6 +66,7 @@ body, html {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    padding-bottom: 100px;
 }
 
 #flexbox .flex {

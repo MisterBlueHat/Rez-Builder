@@ -4,11 +4,22 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+body, html {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url("/static/images/food.jpg") no-repeat center fixed;
+    background-size: cover;
+
+}
 .header  {
     font-size: 40px;
     top: 0;
     left: 0;
-    position: fixed; 
+    position: relative;
     width: 100%;
     color: rgb(0, 0, 0);
     font-family: 'Work Sans', sans-serif;
@@ -40,7 +51,7 @@
 
 .navbar a::before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     width: 100%;
@@ -53,21 +64,11 @@
     width: 100%;
 }
 
-
-body, html {
-    background: url("/static/images/food.jpg") no-repeat center fixed;
-    background-size: cover;
-    overflow: hidden;
-    height: 100%;
-    margin: 0;
-
-}
-
-
 #flexbox {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    height: 70%;
 }
 
 #flexbox .flexitem {
@@ -104,6 +105,8 @@ body, html {
     overflow-y: auto;
 
 }
+
+#flexbox .flexitem ul
 
 #map {
     height: 500%;

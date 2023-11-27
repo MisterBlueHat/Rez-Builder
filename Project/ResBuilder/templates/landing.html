@@ -1,28 +1,27 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
-
 <head>
 	<link rel="stylesheet" href="{% static 'css/landing_test.css' %}">
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMiDBzFBTy41UHfZqx3q_16kZgA-DcqXc&callback=initMap" type="text/javascript"></script>
 </head>
 <title>Landing</title>
 <body>
+	<html>
     <header class="header">
         <a href="#" class="logo">ResBuilder</a> 
         <nav class="navbar">
-            <a href= "{% url 'landing' %}" > Cart page </a>">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Terms of Service</a>
+            <a href= "{% url 'home' %}" >Home</a>
+            <a href="{% url 'About' %}">About</a>
+            <a href="{% url 'Contact' %}">Contact</a>
+            <a href="{% url 'TOS' %}">Terms of Service</a>
         </nav>
 
     </header>
 <div id="flexbox">
 	<div class ="flexitem"> 
-		<h1>Welcome to {{rest_name}}!</h1>
-			<h1>{{rest_name}} is a restaurant located in {{rest_city}}</h1>
-			<h1>The Average rating is {{rest_rating}} stars</h1>
+		<h2>Welcome to {{rest_name}}!</h2>
+			<h3>{{rest_name}} is a restaurant located in {{rest_city}}</h3>
+			<h3>The Average rating is {{rest_rating}} stars</h3>
 			<ul>
 				<h1>Restaurant Information</h1>
 				<li>Website: <a href="{{rest_site}}">Link</a> </li>
@@ -110,5 +109,5 @@
 	</div>  
 	</div> 
 </div>
-</body>
 </html>
+</body>
