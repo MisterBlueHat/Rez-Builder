@@ -1,113 +1,112 @@
 {% load static %}
 <!DOCTYPE html>
+<html>
+
 <head>
 	<link rel="stylesheet" href="{% static 'css/landing_test.css' %}">
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMiDBzFBTy41UHfZqx3q_16kZgA-DcqXc&callback=initMap" type="text/javascript"></script>
 </head>
 <title>Landing</title>
 <body>
-	<html>
     <header class="header">
         <a href="#" class="logo">ResBuilder</a> 
         <nav class="navbar">
-            <a href= "{% url 'home' %}" >Home</a>
+            <a href="{% url 'home' %}">Home</a>
             <a href="{% url 'About' %}">About</a>
             <a href="{% url 'Contact' %}">Contact</a>
             <a href="{% url 'TOS' %}">Terms of Service</a>
         </nav>
 
     </header>
-<div id="flexbox">
-	<div class ="flexitem"> 
-		<h2>Welcome to {{rest_name}}!</h2>
-			<h3>{{rest_name}} is a restaurant located in {{rest_city}}</h3>
-			<h3>The Average rating is {{rest_rating}} stars</h3>
-			<ul>
-				<h1>Restaurant Information</h1>
-				<li>Website: <a href="{{rest_site}}">Link</a> </li>
-				<li>Phone: {{rest_phone}}</li>
-				<li>Address: {{rest_addr}}</li>	
-			</ul>
-		<div id="map" style = "clear:both; height:200px;"></div>
-		<script>
-			const currentUrl = window.location.href;
-			let params = (new URL(currentUrl)).searchParams;
-			// Initialize the map
-			function initMap() {
-			  // Specify the center and zoom level
-			  var mapOptions = {
-				center: new google.maps.LatLng(50, 50),
-				zoom: 13
-			  };
-		  
-			  // Create the map
-			  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-			}
-		  </script>
+	<div id="flexbox">
+		<div class ="flexitem"> 
+				<P>Welcome to {{rest_name}}!</h1>
+					<br>
+					{{rest_name}} is a restaurant located in {{rest_city}}
+					<br>
+					The Average rating is {{rest_rating}} stars
+					<br>
+					Restaurant Information!
+					<br>
+					Website: <a href="{{rest_site}}">Link</a>
+					<br>
+					Phone: {{rest_phone}}
+					<br>
+					Address: {{rest_addr}}
+					<br>
+				</p>
+					<img src="{{rest_img}}">
+			<div id="reviews">
+					<h3>{{rest_name}} Reviews!</h3> 
+					<p>Rest_reviews1Rest_reviews1Rest_reviews
+					Rest_reviews11Rest_reviews1Rest_reviews1
+					Rest_reviews1Rest_reviews1Rest_reviews
+					Rest_reviews11Rest_reviews1Rest_reviews1
+					Rest_reviews1Rest_reviews1Rest_reviews
+					Rest_reviews11Rest_reviews1Rest_reviews1
+					Rest_reviews1Rest_reviews1Rest_reviews
+					Rest_reviews11Rest_reviews1Rest_reviews1
+					Rest_reviews1Rest_reviews1Rest_reviews
+					Rest_reviews11Rest_reviews1Rest_reviews1
+					Rest_reviews1Rest_reviews1Rest_reviews
+					Rest_reviews11Rest_reviews1Rest_reviews1
+					</p>
+			</div>
+			<div id="reviews">
+					<p>
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+					</p> 
+			</div>
+			<div id="reviews">
+					<p>
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+						Rest_reviews1Rest_reviews1Rest_reviews
+						Rest_reviews11Rest_reviews1Rest_reviews1
+					</p>
+			</div>	
+			</div>
+			<div id="map">
+					<script>
+					// Initialize the map
+					function initMap() {
+					// Specify the center and zoom level
+					var mapOptions = {
+						center: { lat: 42.3601, lng: -71.0589},
+						zoom: 12
+					};
+				
+					// Create the map
+					var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+					}
+					</script>
+			</div> 
+		</div> 
 	</div>
-	<div class ="flexitem">
-			<img src="{{rest_img}}">
-	</div>	
-	<div class="flexitem"> 
-		<div class="flexR"> 
-			<h3>{{rest_name}} Reviews!</h3> 
-		</div>
-	<div class="flexitem"> 
-		<p>Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			
-		</p>
-	</div>
-	<div class="flexitem"> 
-		<p>
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-		</p>
-	</div>
-	<div class="flexitem"> 
-		<p>
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-			Rest_reviews1Rest_reviews1Rest_reviews
-			Rest_reviews11Rest_reviews1Rest_reviews1
-		</p>		
-	</div>
-	</div>  
-	</div> 
-</div>
-</html>
 </body>
+</html>

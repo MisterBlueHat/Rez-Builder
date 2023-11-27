@@ -4,22 +4,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body, html {
-    overflow: auto;
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    background: url("/static/images/food.jpg") no-repeat center fixed;
-    background-size: cover;
-
-}
 .header  {
     font-size: 40px;
     top: 0;
     left: 0;
-    position: relative;
+    position: relative; 
     width: 100%;
     color: rgb(0, 0, 0);
     font-family: 'Work Sans', sans-serif;
@@ -27,8 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-
+    border: 5px solid white;
 }
 
 .logo {
@@ -51,7 +39,7 @@ body {
 
 .navbar a::before {
     content: '';
-    position: relative;
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -64,52 +52,80 @@ body {
     width: 100%;
 }
 
+
+body, html {
+    background: url("/static/images/food.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: auto;
+}
+
+body {
+    height: 100%;
+    border: 5px solid green;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+
 #flexbox {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    height: 70%;
+    height: 100%;
+    border: 5px solid blue;
 }
 
 #flexbox .flexitem {
-    margin-top: 43px;
     flex: 1;
     background-color: transparent;
     text-align: center;
     color: white;
     font-size: 30px;
     border: 2px solid white;
+    height: auto;
 
 }
 
 #flexbox .flexitem img {
     flex: 1 1 0;
-    max-width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 75%;
     background-color: transparent;
     text-align: center;
     color: white;
+    float: left;
+    border: solid yellow 5px;
+}
+
+#flexbox .flexitem h1 {
+    font-size: 16px;
+    border: solid green;
 }
 
 #flexbox .flexitem h3 {
-    font-size: 32px;
+    font-size: 16px;
 }
 
-#flexbox .flexitem p{
+#reviews {
     flex: 1 1 0;
+    flex-direction: column;
     background-color: transparent;
     text-align: center;
     color: white;
-    font-size: 25px;
-    height: 240px;
+    font-size: 16px;
+    width: auto;
+    height: 25%;
     overflow-y: auto;
+    border: solid orange 5px;
 
 }
 
-#flexbox .flexitem ul
-
 #map {
-    height: 500%;
-    width: 100%;
-    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20;
+    bottom: 0;
+    height: 20%;
+    width: 20%;
   }
