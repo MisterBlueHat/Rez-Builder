@@ -5,19 +5,20 @@
 <head>
 	<link rel="stylesheet" href="{% static 'css/landing_test.css' %}">
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMiDBzFBTy41UHfZqx3q_16kZgA-DcqXc&callback=initMap" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <title>Landing</title>
-<body>
-    <header class="header">
-        <a href="#" class="logo">ResBuilder</a> 
-        <nav class="navbar">
-            <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'About' %}">About</a>
-            <a href="{% url 'Contact' %}">Contact</a>
-            <a href="{% url 'TOS' %}">Terms of Service</a>
-        </nav>
+<header class="header">
+	<a href="{% url 'home' %}" class="logo">Rez-Builder</a> 
+	<nav class="navbar">
+		<a href="{% url 'home' %}">Home</a>
+		<a href="{% url 'About' %}">About</a>
+		<a href="{% url 'Contact' %}">Contact</a>
+		<a href="{% url 'TOS' %}">Terms of Service</a>
+	</nav>
 
-    </header>
+</header>
+<body>
 	<div id="flexbox">
 		<div class ="flexitem"> 
 				<P>Welcome to {{rest_name}}!</h1>
@@ -91,7 +92,7 @@
 					</p>
 			</div>	
 			</div>
-			<div id="map">
+			<!--<div id="map">
 					<script>
 					// Initialize the map
 					function initMap() {
@@ -105,7 +106,7 @@
 					var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 					}
 					</script>
-			</div> 
+			</div> -->
 		</div> 
 	</div>
 </body>

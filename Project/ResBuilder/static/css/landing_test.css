@@ -16,29 +16,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid white;
 }
-
+/* Rez-Builder Text*/
 .logo {
     font-size: 32px;
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 700; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
 }
 
-
+/* NavBar Links*/
 .navbar a {
     position: relative;
-    font-size: 24px;
+    font-size: 25px;
     color: white;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
-
+    margin-right: 20px;
 }
 
 .navbar a::before {
-    content: '';
+
     position: absolute;
     top: 100%;
     left: 0;
@@ -61,7 +64,6 @@ body, html {
 
 body {
     height: 100%;
-    border: 5px solid green;
     overflow-y: auto;
     overflow-x: auto;
 }
@@ -72,7 +74,6 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     height: 100%;
-    border: 5px solid blue;
 }
 
 #flexbox .flexitem {
@@ -81,29 +82,28 @@ body {
     text-align: center;
     color: white;
     font-size: 30px;
-    border: 2px solid white;
     height: auto;
-
 }
-
-#flexbox .flexitem img {
+.flexitem img {
     flex: 1 1 0;
-    width: 50%;
+    width: 30%;
     height: 75%;
     background-color: transparent;
     text-align: center;
-    color: white;
     float: left;
-    border: solid yellow 5px;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+.flexitem p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: large;
 }
 
-#flexbox .flexitem h1 {
-    font-size: 16px;
-    border: solid green;
-}
 
 #flexbox .flexitem h3 {
-    font-size: 16px;
+    font-size: large;
+    margin-top: 10px;
 }
 
 #reviews {
@@ -116,7 +116,7 @@ body {
     width: auto;
     height: 25%;
     overflow-y: auto;
-    border: solid orange 5px;
+    margin-right: 10px;
 
 }
 
