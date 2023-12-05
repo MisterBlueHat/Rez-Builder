@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+html, body{
+    background-image: url("../images/food.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.logo{
+  text-align: left;
+  flex-wrap: wrap;
+  display: flex;
+  max-height: 360px;
+  max-width: 600px;
+
+}
+
+.button{
+  text-align: center;
+  padding: 4px;
+  font-size: 5px;
+}
+.button button{
+  font-size: 25px;
+}
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+.Message{
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  font-size: x-large;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+    
+/* Social Media Footer Links Font Awesome*/
+.fa {
+  display: inline-block;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  width: 24px;
+}
+
+.fa-facebook {
+  background-color: #3b5998;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-twitter {
+  background-color: #55acee;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-instagram {
+  background-color: #e4405f;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-youtube {
+  background-color: #cd201f;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+/*Style rules for Social Media links*/
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+}
+
+.nav li a{
+  text-decoration: none;
+  margin-top: 10px;
+}
