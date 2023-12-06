@@ -41,6 +41,17 @@ class Restaurant(models.Model):
 
         response = requests.get(url, headers=headers, params=params)
 
+        # Get reviews
+        yelp_reviews = response.json()['reviews']
+    
+        for review in yelp_reviews:
+        # Create Review object for each
+        Review.objects.create(
+            text=review['text'],
+            rating=review['rating'],
+            restaurant=restaurant  
+        )
+
         if response.status_code == 200:
             data = response.json()
             businesses = data.get("businesses", [])
