@@ -92,7 +92,13 @@
 						Rest_reviews1Rest_reviews1Rest_reviews
 						Rest_reviews11Rest_reviews1Rest_reviews1
 					</p>
-			</div>	
+			</div>
+			{% for review in reviews %}
+			<div id="reviews">
+				<p>{{ review.text }}</p>
+				<p>Rating: {{ review.rating }}</p>
+			</div>
+			{% endfor %}
 			</div>
 			<!--<div id="map">
 					<script>
