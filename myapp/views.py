@@ -91,4 +91,4 @@ def Contact(request):
 	
 def landing(request):
     restaurant = Restaurant.objects.get(pk=1) 
-    return render(request, 'landing-2.html', {'reviews': restaurant.reviews.all()})
+    return render(request, 'landing.html', {'reviews': restaurant.reviews.all()})
