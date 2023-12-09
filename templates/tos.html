@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <link rel="stylesheet" href="{% static 'css/tos_test.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../static/images/fav_logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="terms-box">
+    <img src="../static/images/logo.png" class="logo" >
+    <div class="terms-text">
+      <h2>Welcome to RezBuilder!</h2>
+      <h2>Terms of Service Agreement</h2>
+      <p>Last Edit: 12/8/2023</p>
+      <p>Greetings Users,</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra ut dolor vel volutpat. Vivamus ac semper dolor. Aliquam faucibus eleifend lacus vitae bibendum. Nullam egestas, tortor vitae suscipit tempus, ipsum eros feugiat lectus, 
+        quis aliquam sem nunc id elit. Nulla facilisi. Sed sollicitudin turpis vel ullamcorper mollis. Integer et elit efficitur, blandit nisi ut, tincidunt augue. Maecenas augue turpis, iaculis vel eleifend vitae, consequat vitae sapien. Nunc fermentum 
+        leo id aliquam ornare. Aenean vel ipsum ut magna auctor lacinia. Pellentesque bibendum imperdiet auctor. In hac habitasse platea dictumst.</p>
+      <p>Quisque fringilla ultricies laoreet. Mauris placerat sodales ex id gravida. Ut accumsan tortor sed pretium imperdiet. Aliquam aliquet pellentesque elementum. Aliquam feugiat maximus massa, ullamcorper semper justo iaculis vitae. Aenean tincidunt 
+        cursus gravida. In eget tempus velit. Suspendisse finibus turpis sed enim facilisis dapibus. Nam pharetra pulvinar tortor quis dapibus. Duis quis mollis massa, non ultrices ante. Donec consequat nisi ac iaculis iaculis. Donec nec arcu et sem fringilla
+        lacinia eget nec diam. Vestibulum fermentum porta sollicitudin.</p>
+      <p>Mauris mattis pellentesque nibh, vel porttitor massa. In lorem leo, convallis nec ante id, lobortis consequat tortor. Donec sodales mattis risus sed consectetur. Suspendisse eget erat lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Proin ac mi vitae nibh egestas eleifend. Etiam eget fringilla magna, a tincidunt dui. Nulla ultrices felis mi, quis tristique orci gravida vel. Praesent molestie et tellus nec porta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra ut dolor vel volutpat. Vivamus ac semper dolor. Aliquam faucibus eleifend lacus vitae bibendum. Nullam egestas, tortor vitae suscipit tempus, ipsum eros feugiat lectus, 
+          quis aliquam sem nunc id elit. Nulla facilisi. Sed sollicitudin turpis vel ullamcorper mollis. Integer et elit efficitur, blandit nisi ut, tincidunt augue. Maecenas augue turpis, iaculis vel eleifend vitae, consequat vitae sapien. Nunc fermentum 
+          leo id aliquam ornare. Aenean vel ipsum ut magna auctor lacinia. Pellentesque bibendum imperdiet auctor. In hac habitasse platea dictumst.</p>
+        <p>Quisque fringilla ultricies laoreet. Mauris placerat sodales ex id gravida. Ut accumsan tortor sed pretium imperdiet. Aliquam aliquet pellentesque elementum. Aliquam feugiat maximus massa, ullamcorper semper justo iaculis vitae. Aenean tincidunt 
+          cursus gravida. In eget tempus velit. Suspendisse finibus turpis sed enim facilisis dapibus. Nam pharetra pulvinar tortor quis dapibus. Duis quis mollis massa, non ultrices ante. Donec consequat nisi ac iaculis iaculis. Donec nec arcu et sem fringilla
+          lacinia eget nec diam. Vestibulum fermentum porta sollicitudin.</p>
+        <p>Mauris mattis pellentesque nibh, vel porttitor massa. In lorem leo, convallis nec ante id, lobortis consequat tortor. Donec sodales mattis risus sed consectetur. Suspendisse eget erat lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Proin ac mi vitae nibh egestas eleifend. Etiam eget fringilla magna, a tincidunt dui. Nulla ultrices felis mi, quis tristique orci gravida vel. Praesent molestie et tellus nec porta.</p>
+      </div>
+      <h4> Agree to <span>Terms of Service</span> and I read the Privacy Notice.</h4>
+      <div class="buttons">
+        <script>
+        // Wait for the DOM content to be fully loaded
+          document.addEventListener('DOMContentLoaded', function() {
+        // Get the button element
+          const acceptButton = document.getElementById('acceptButton');
+          
+        // Add a click event listener to the button
+          acceptButton.addEventListener('click', function() {
+        // Redirect to the next page when the button is clicked
+          window.location.href = "{% url 'home' %}"; // Replace 'next-page.html' with the desired URL
+              });
+          });
+          </script>
+        <button class="btn red-button" id="acceptButton">Accept</button>
+        <button class="btn grey-button" id="declineButton">Decline</button>      </div>
+
+  </div>
+</body>
+</html>

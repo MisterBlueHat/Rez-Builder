@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/images/food.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-box{
+    max-width: 500px;
+    background-color: #333;
+    color: white;
+    font-family: "Montserrat";
+    padding: 60px 30px;
+}
+.terms-text{
+    margin-top: -30px;
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: white;
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+.terms-box h4{
+    font-size: 15px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.terms-box h4 span{
+    color: red;
+}
+
+.buttons{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.btn{
+    height: 50px;
+    width: calc(50% - 16px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    transition: .3s linear;
+    cursor: pointer;
+}  
+
+
+#acceptButton{
+    background-color: red;
+}
+#declineButton{
+    background: black;
+}
+
+.logo{
+    margin-left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    opacity: .5;
+}
