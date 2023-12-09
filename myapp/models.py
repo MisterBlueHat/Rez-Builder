@@ -10,6 +10,7 @@ class Restaurant(models.Model):
     address = models.CharField(max_length=100)
     image = models.CharField(max_length=100)
 
+#commented out ~Christian L
 '''class Review(models.Model):
     text = models.TextField()
     rating = models.IntegerField()
