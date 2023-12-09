@@ -10,7 +10,8 @@ class Restaurant(models.Model):
     address = models.CharField(max_length=100)
     image = models.CharField(max_length=100)
 
-class Review(models.Model):
+'''class Review(models.Model):
     text = models.TextField()
     rating = models.IntegerField()
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+'''

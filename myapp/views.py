@@ -62,21 +62,6 @@ def var_test(request):
 	return HttpResponse(template.render(request))
 
 # views.py 
-
-from .models import Restaurant
-
-def restaurant_reviews(request, restaurant_id):
-    restaurant = Restaurant.objects.get(id=restaurant_id)
-    reviews = restaurant.Reviews(restaurant_id)
-    
-    reviews_data = reviews.get_reviews()
-    
-    context = {
-        'reviews': reviews_data
-    }
-    
-    return render(request, 'reviews.html', context)
-
 def About(request):
 	template = loader.get_template("templates/About.html")
 	return HttpResponse(template.render())
@@ -88,7 +73,3 @@ def TOS(request):
 def Contact(request):
 	template = loader.get_template("templates/CONTACT.html")
 	return HttpResponse(template.render())
-	
-def landing(request):
-    restaurant = Restaurant.objects.get(pk=1) 
-    return render(request, 'landing.html', {'reviews': restaurant.reviews.all()})
