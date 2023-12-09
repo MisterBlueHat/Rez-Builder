@@ -1,38 +1,28 @@
-/*.restbox {
-	background-color: aquamarine;
-}*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 html, body{
     height: 100%;
-}
-body {
     background-image: url("../images/food.jpg");
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
-.header  {
-    font-size: 40px;
-    top: 0;
-    left: 0;
-    position: relative;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    font-family: 'Work Sans', sans-serif;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 
-}
-.restbox{
-    background-color:grey;
-}
+
+.logo{
+    text-align: left;
+    flex-wrap: wrap;
+    display: inline-block;
+    max-height: 360px;
+    max-width: 600px;
+  }
+
+
 
 #prefs label{
     display: block;
@@ -44,6 +34,7 @@ body {
 }
 
 .filter-box{
+    float: left;
     width: 25%;
     padding: 20px;
     height: 240px;
@@ -67,12 +58,84 @@ body {
 }
 .restaurants{
     float: right;
-    width: 75%;
+    width: 40%;
+    max-height: 70%;
     padding: 20px;
-    justify-content: space-around;
-    border: 2px solid black;
+    justify-content: space-between;
+    border: 4px solid black;
+    overflow-y: scroll;
 }
 
-.restaurants h2{
+
+.restaurants h1{
 	text-align: center;
+    border: 3px solid green;
+    color: white;
 }
+
+.fa {
+    display: inline-block;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    width: 24px;
+  }
+  
+  .fa-facebook {
+    background-color: #3b5998;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .fa-twitter {
+    background-color: #55acee;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .fa-instagram {
+    background-color: #e4405f;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .fa-youtube {
+    background-color: #cd201f;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .footer-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+  }
+  /*Style rules for Social Media links*/
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+  }
+  
+  .nav li a{
+    text-decoration: none;
+    margin-top: 10px;
+  }

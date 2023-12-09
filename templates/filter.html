@@ -7,16 +7,20 @@
 </head>
 <title>Filters</title>
 <body>
-    <header class="header">
-        <a href="#" class="logo">ResBuilder</a> 
-        <nav class="navbar">
-            <a href= "{% url 'home' %}" >Home</a>
-            <a href="{% url 'About' %}">About</a>
-            <a href="{% url 'Contact' %}">Contact</a>
-            <a href="{% url 'TOS' %}">Terms of Service</a>
-        </nav>
-
-    </header>
+    <div class="logo">
+        <img src="../static/images/logo.png" class="logo" >
+    </div>
+    <div class="restaurants">
+        <h1>Restaurants</h1>    
+        {% for restaurant in restaurants %}
+            <a href="{% url 'landing' %}?id={{restaurant.id}}">
+                    <h3>{{restaurant.name}}
+                    {{restaurant.address}}
+                    {{restaurant.city}}</h3>
+            </a>
+        {% endfor %}
+    </div>
+    <br>
     <div class="filter-box">
         <h2>Filterss</h2>    
         <form id="prefs" action = "" method = "post"> 
@@ -25,17 +29,24 @@
             <input id="submit" type="submit" value=Submit> 
         </form> 
     </div>
-    <div class="restaurants">
-        <h2>Restaurants</h2>    
-        {% for restaurant in restaurants %}
-            <a href="{% url 'landing' %}?id={{restaurant.id}}">
-                <div class="restbox">
-                    <h2>{{restaurant.name}}</h2>
-                        {{restaurant.address}}
-                        , {{restaurant.city}}
-                </div>   
-            </a>
-        {% endfor %}
-    </div>
 </body>
+<footer>
+    <footer>
+        <div class="footer-container">
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+              <li>&copy; 2023 RezBuilder. All rights reserved.</li>
+              <div class="nav">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'About' %}">About</a></li>
+                <li><a href="{% url 'Contact' %}">Contact</a></li>
+                <li><a href="{% url 'TOS' %}">Terms of Service</a></li>
+            </div>
+            </ul>
+          </div>
+    </footer>
+</footer>
 </html>
