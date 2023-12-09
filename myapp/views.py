@@ -88,4 +88,7 @@ def TOS(request):
 def Contact(request):
 	template = loader.get_template("templates/CONTACT.html")
 	return HttpResponse(template.render())
-
+	
+def landing(request):
+    restaurant = Restaurant.objects.get(pk=1) 
+    return render(request, 'landing.html', {'reviews': restaurant.reviews.all()})
