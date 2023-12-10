@@ -9,10 +9,16 @@ headers = {
 def response(id):
     url = "https://api.yelp.com/v3/businesses/" + id + "/reviews?limit=20&sort_by=yelp_sort"
     response = requests.get(url, headers=headers).json()
-    
+    reviews = {}
     for r in response["reviews"]:
-        print(r["user"]["name"])
-        
+        reviews[r["id"]] = {
+            "text" : r["text"], 
+            "picture" : r["user"]["image_url"], 
+            "name" : r["user"]["name"], 
+            "rating" : r["rating"], 
+            "date" : r["time_created"], 
+        }
+    return reviews
 response("nvlxtOwbGqPW8E6_sYTfvw")
 
 #Create a text file if it doesn't already exist and write the the fetched JSON to it. 

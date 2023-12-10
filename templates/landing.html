@@ -38,68 +38,16 @@
 					Address: {{rest_addr}}
 					<br>
 				</p>
-					<img src="{{rest_img}}">
-			<div id="reviews">
-					<h3>{{rest_name}} Reviews!</h3> 
-					<p>Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					Rest_reviews1Rest_reviews1Rest_reviews
-					Rest_reviews11Rest_reviews1Rest_reviews1
-					</p>
-			</div>
-			<div id="reviews">
-					<p>
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-					</p> 
-			</div>
-			<div id="reviews">
-					<p>
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-						Rest_reviews1Rest_reviews1Rest_reviews
-						Rest_reviews11Rest_reviews1Rest_reviews1
-					</p>
-			</div>
-			{% for review in reviews %}
-			<div id="reviews">
-				<p>{{review.text}}</p>
-				<p>Rating: {{review.rating}}</p>
-			</div>
-			{% endfor %}
-			</div>
+				<img src="{{rest_img}}">
+				{% for review, value in rest_reviews.items %}
+					<div id="reviews">
+						<img src={{value.picture}}>
+						<h2>{{value.name}}</h2>
+						<h2>{{value.text}}</h2>
+						<h2>{{value.rating}}</h2>
+						<h2>{{value.date}}</h2>
+					</div>
+				{% endfor %}
 			<!--<div id="map">
 					<script>
 					// Initialize the map

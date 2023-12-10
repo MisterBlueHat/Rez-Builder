@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
 from myapp.scripts.yelp import response
+from myapp.scripts.reviews import response as review_response
 from myapp.models import Restaurant
 from .forms import InputForm 
 
@@ -33,6 +34,8 @@ def landing(request):
 	template = loader.get_template("templates/landing.html")
 	rest_id = request.GET.get('id', '')
 	rest_pick = Restaurant.objects.get(pk=rest_id)
+	review = review_response(rest_id)
+	print(review)
 	context = {
 		'rest_name': rest_pick.name,
 		'rest_city': rest_pick.city,
@@ -41,6 +44,7 @@ def landing(request):
 		'rest_phone': rest_pick.phone,
 		'rest_addr': rest_pick.address,
 		'rest_img': rest_pick.image,
+		'rest_reviews' : review
 	}
 	return HttpResponse(template.render(context,request))
 
