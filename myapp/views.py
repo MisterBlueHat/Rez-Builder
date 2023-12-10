@@ -16,7 +16,7 @@ def home(request):
 def filter(request):
 	if request.POST:
 		Restaurant.objects.all().delete()
-		response(request.POST.get('city'))
+		response(request.POST.get('city'), request.POST.get('max_distance'), request.POST.get('price'))
 		context ={
 			'form' : InputForm(),
 			'restaurants' : Restaurant.objects.all()

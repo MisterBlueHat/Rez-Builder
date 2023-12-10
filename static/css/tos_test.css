@@ -80,6 +80,7 @@ body{
   position: fixed;
   top: 20px;
   left: 20px;
+  margin-bottom: 100px;
   z-index: 0;
 }
 .btn:hover{
