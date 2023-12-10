@@ -3,6 +3,7 @@ from django.template import loader
 from myapp.scripts.yelp import response
 from myapp.models import Restaurant
 from .forms import InputForm 
+from .restaurant_request import get_reviews_by_id
 
 import random
 import requests
@@ -73,3 +74,15 @@ def TOS(request):
 def Contact(request):
 	template = loader.get_template("templates/CONTACT.html")
 	return HttpResponse(template.render())
+
+def landing(request):
+    business_id = "someId" 
+    api_key = "apiKey"
+
+    reviews = get_reviews_by_id(business_id, api_key)
+
+    context = {
+        "reviews": reviews
+    }
+
+    return render(request, "landing.html", context)
