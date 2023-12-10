@@ -86,3 +86,12 @@ def landing(request):
     }
 
     return render(request, "landing.html", context)
+
+def landing_error(request):
+    try:
+        # Error handling code to display landing page
+        return render(request, 'landing.html')
+    except Exception as e:
+        logger.error("Error loading landing page", exc_info=True)
+        return HttpResponseServerError("Oops, something went wrong. Please try again later.")
+
