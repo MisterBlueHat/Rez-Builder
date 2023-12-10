@@ -81,11 +81,3 @@ class Review(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
         
 logger = logging.getLogger(__name__)
-
-def landing(request):
-    try:
-        # Error handling code to display landing page
-        return render(request, 'landing.html')
-    except Exception as e:
-        logger.error("Error loading landing page", exc_info=True)
-        return HttpResponseServerError("Oops, something went wrong. Please try again later.")
