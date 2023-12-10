@@ -2,7 +2,7 @@ venv/
 *.log
 *.pot
 *.pyc
-__pycache__/
+ /__pycache/*
 db.sqlite3
 media
 .vscode
