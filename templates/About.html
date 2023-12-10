@@ -3,41 +3,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/6c1512dafc.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/About.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/About.css' %}">
     <link rel="shortcut icon" href="../static/images/logo.png">
     <title>About</title>
 </head>
-<header class="header">
-    <a href="#" class="logo">ResBuilder</a> 
-    <nav class="navbar">
-        <a href="{% url 'home' %}">Home</a>
-        <a href="{% url 'About' %}">About</a>
-        <a href="{% url 'Contact' %}">Contact</a>
-        <a href="{% url 'TOS' %}">Terms of Service</a>
-    </nav>
-
-</header>
 <body>
+    <div class="logo">
+        <img src="../static/images/logo.png" class="logo" >
+    </div>
 
     <div id="flexbox">
         <div class="flex"><p>Christian Castillo</p>
-        <img src="{% static 'images/img.png' %}"alt="profile">
+        <img src="{% static 'images/CC.jpg' %}"alt="profile">
         <p class="desc">STUFF ABOUT CHRISTIAN C</p>
         </div>
         <div class="flex"><p>Christian L</p>
-        <img src="{% static 'images/img.png' %}" alt="profile">
+        <img src="{% static 'images/CL.png' %}" alt="profile">
         <p class="desc">STUFF ABOUT CHRISTIAN L</p>
         </div>
         <div class="flex"><p>Michael Chambers</p>
-        <img src="{% static 'images/img.png' %}" alt="profile">
+        <img src="{% static 'images/MC.jpg' %}" alt="profile">
         <p class="desc">STUFF ABOUT MIKE</p>
         </div>
         <div class="flex"><p>Nicholas Branch</p>
-        <img src="{% static 'images/img.png' %}" alt="profile">
-        <p class="desc">STUFF ABOUT NICK</p>
+        <img src="{% static 'images/NB.jpeg' %}" alt="profile">
+        <p class="desc">
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICK
+            STUFF ABOUT NICKSTUFF ABOUT NICK
+            STUFF ABOUT NICK
+        </p>
         </div>
     </div>
 </body>
+<footer>
+    <div class="footer-container">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+            <li>&copy; 2023 RezBuilder. All rights reserved.</li>
+            <div class="nav">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'About' %}">About</a></li>
+                <li><a href="{% url 'Contact' %}">Contact</a></li>
+                <li><a href="{% url 'TOS' %}">Terms of Service</a></li>
+            </div>
+         </ul>
+     </div>
+</footer>
 </html>

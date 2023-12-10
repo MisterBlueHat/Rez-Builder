@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/6c1512dafc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/filter.css' %}">
     <link rel="shortcut icon" href="../static/images/logo.png">
 </head>
@@ -14,15 +16,23 @@
         <h1>Restaurants</h1>    
         {% for restaurant in restaurants %}
             <a href="{% url 'landing' %}?id={{restaurant.id}}">
-                    <h3>{{restaurant.name}}
-                    {{restaurant.address}}
-                    {{restaurant.city}}</h3>
+            <div class="RI">
+                <div class="RN">
+                    <h3>{{restaurant.name}}</h3>
+                </div>
+                <div class="RA">
+                    <h3>{{restaurant.address}}</h3>
+                </div>
+                <div class="RC">
+                   <h3>{{restaurant.city}}</h3>
+                </div>
+            </div>
             </a>
         {% endfor %}
     </div>
     <br>
     <div class="filter-box">
-        <h2>Filterss</h2>    
+        <h2>Filters</h2>    
         <form id="prefs" action = "" method = "post"> 
             {% csrf_token %} 
             {{form}} 

@@ -5,57 +5,16 @@
 html{
   background-image: url('../images/food.jpg');
 }
-/* Header Style*/
-.header  {
-  font-size: 40px;
-  top: 0;
-  left: 0;
-  position: relative; 
-  width: 100%;
-  color: rgb(0, 0, 0);
-  font-family: 'Work Sans', sans-serif;
-  background: black;
+
+.logo{
+  text-align: left;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* Rez-Builder Text*/
-.logo {
-  font-size: 32px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700; 
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  float: left;
+  max-height: 360px;
+  max-width: 600px;
+  padding-top: -30px;
 }
 
-/* NavBar Links*/
-.navbar a {
-  position: relative;
-  font-size: 25px;
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
-  margin-left: 40px;
-  margin-right: 20px;
-}
-
-.navbar a::before {
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  transition: .3s;
-}
-
-.navbar a:hover::before {
-  width: 100%;
-}
 /* Style for Form*/
 form{
   color: white;
@@ -68,7 +27,9 @@ form{
 .container{
   width: 80%; 
   margin: 50px auto;
-  margin-top: 80px;
+  margin-top: -60px;
+  padding-bottom: 40px;
+  
 }
 /* Style rule for Contact Form Header */
 .container h1, p{
@@ -217,4 +178,9 @@ margin-top: -10px;
   color: #fff;
   display: block;
   font-size: 20px;
+}
+
+.nav li a{
+  text-decoration: none;
+  margin-top: 10px;
 }
