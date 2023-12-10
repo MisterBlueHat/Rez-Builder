@@ -94,10 +94,12 @@
 					</p>
 			</div>
 			{% for review in reviews %}
-			<div id="reviews">
-				<p>{{review.text}}</p>
-				<p>Rating: {{review.rating}}</p>
-			</div>
+				<table>
+					<tr>
+						<td>{{review.text}</td>
+						<td>{{ review.rating }}</td>
+					</tr>
+				</table>
 			{% endfor %}
 			</div>
 			<!--<div id="map">
