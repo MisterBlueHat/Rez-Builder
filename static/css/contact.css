@@ -4,8 +4,11 @@
 }
 html{
   background-image: url('../images/food.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+<<<<<<< HEAD
 .logo{
   text-align: left;
   flex-wrap: wrap;
@@ -13,6 +16,14 @@ html{
   max-height: 360px;
   max-width: 600px;
   padding-top: -30px;
+=======
+/* Rez-Builder Text*/
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+>>>>>>> 980389839acc37bf01b8ebd20f0b2ddda6aedbe0
 }
 
 /* Style for Form*/
@@ -27,9 +38,15 @@ form{
 .container{
   width: 80%; 
   margin: 50px auto;
+<<<<<<< HEAD
   margin-top: -60px;
   padding-bottom: 40px;
   
+=======
+  margin-top: 250px;
+  position: relative;
+
+>>>>>>> 980389839acc37bf01b8ebd20f0b2ddda6aedbe0
 }
 /* Style rule for Contact Form Header */
 .container h1, p{

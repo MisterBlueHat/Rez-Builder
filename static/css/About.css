@@ -41,11 +41,14 @@ html, body{
     border: solid white 2px;
 }
 
+<<<<<<< HEAD
 #flexbox .flex p {
     font-size: 22px;
     overflow-y: scroll;
     max-height: 100px;
 }
+=======
+>>>>>>> 980389839acc37bf01b8ebd20f0b2ddda6aedbe0
 /* Social Media Footer Links Font Awesome*/
 .fa {
     display: inline-block;
@@ -55,15 +58,22 @@ html, body{
     margin-right: 10px;
     text-align: center;
     width: 24px;
+<<<<<<< HEAD
     background: white;
 }
   
 .fa-facebook {
+=======
+  }
+  
+  .fa-facebook {
+>>>>>>> 980389839acc37bf01b8ebd20f0b2ddda6aedbe0
     background-color: #3b5998;
     border-radius: 50%;
     color: #fff;
   }
   
+<<<<<<< HEAD
 .fa-twitter {
     background-color: #55acee;
     border-radius: 50%;
@@ -120,3 +130,55 @@ margin-top: 10px;
     max-height: 240px;
     max-width: 300px;
 }
+=======
+  .fa-twitter {
+    background-color: #55acee;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .fa-instagram {
+    background-color: #e4405f;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .fa-youtube {
+    background-color: #cd201f;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .footer-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+  }
+  /*Style rules for Social Media links*/
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+  }
+  
+  .nav li a{
+    text-decoration: none;
+    margin-top: 10px;
+  }
+>>>>>>> 980389839acc37bf01b8ebd20f0b2ddda6aedbe0
