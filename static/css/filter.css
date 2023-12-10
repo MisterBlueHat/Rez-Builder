@@ -35,11 +35,12 @@ html, body{
 
 .filter-box{
     float: left;
-    width: 25%;
+    width: 10%;
     padding: 20px;
-    height: 240px;
+    height: 200px;
     background-color:grey;
     margin-left: 0;
+    margin-left: 30px ;
     margin-top: 10px;
     border: 1px solid black;
 }
@@ -58,13 +59,14 @@ html, body{
 }
 
 .restaurants h1{
-	text-align: center;
-    border: 3px solid green;
+	  text-align: center;
     color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .restaurants h3{
-  color: green;
+  color: white;
 }
 .fa {
     display: inline-block;
@@ -144,6 +146,9 @@ html, body{
     border: 4px solid black;
     overflow-y: scroll;
     background: grey;
+    margin-right: 10px;
+    margin-top: 30px;
+    max-height: 630px;
 }
 
   .restaurants .RI {
@@ -167,3 +172,4 @@ html, body{
     width: 150px;
     text-align: right;
   }
+
