@@ -4,31 +4,16 @@
 }
 html{
   background-image: url('../images/food.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* Header Style*/
-.header  {
-  font-size: 40px;
-  top: 0;
-  left: 0;
-  position: relative; 
-  width: 100%;
-  color: rgb(0, 0, 0);
-  font-family: 'Work Sans', sans-serif;
-  background: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 /* Rez-Builder Text*/
-.logo {
-  font-size: 32px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700; 
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  float: left;
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
 }
 
 /* NavBar Links*/
@@ -68,7 +53,9 @@ form{
 .container{
   width: 80%; 
   margin: 50px auto;
-  margin-top: 80px;
+  margin-top: 250px;
+  position: relative;
+
 }
 /* Style rule for Contact Form Header */
 .container h1, p{
@@ -217,4 +204,9 @@ margin-top: -10px;
   color: #fff;
   display: block;
   font-size: 20px;
+}
+
+.nav li a{
+  text-decoration: none;
+  margin-top: 10px;
 }

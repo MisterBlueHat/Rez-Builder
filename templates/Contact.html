@@ -9,17 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="../static/images/fav_logo.png" type="image/x-icon">
 </head>
-<header class="header">
-	<a href="{% url 'home' %}" class="logo">Rez Builder</a> 
-	<nav class="navbar">
-		<a href="{% url 'home' %}">Home</a>
-		<a href="{% url 'About' %}">About</a>
-		<a href="{% url 'Contact' %}">Contact</a>
-		<a href="{% url 'TOS' %}">Terms of Service</a>
-	</nav>
-
-</header>
 <body>
+  <div class="logo">
+    <img src="../static/images/logo.png" alt="Logo" >
+  </div>
 <section>
   <div class="container">
     <h1>Connect with Us </h1>
@@ -47,7 +40,7 @@
             <label>Message</label>
             <textarea rows="5" placeholder="Your Message"></textarea>
             <button type="submit">SEND</button>
-            <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=e3gd6epc&n=n1.ratufa.io"></script>
+            <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=o0oj0cdy&n=n1.ratufa.io"></script>
           </form>
         </div>
         <div class="contact-right">
@@ -76,13 +69,19 @@
 </body>
 <footer>
   <div class="footer-container">
-    <ul class="social-icons">
-      <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-      <li>&copy; 2023 RezBuilder. All rights reserved.</li>
-    </ul>
-  </div>
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+        <li>&copy; 2023 RezBuilder. All rights reserved.</li>
+        <div class="nav">
+          <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'About' %}">About</a></li>
+      <li><a href="{% url 'Contact' %}">Contact</a></li>
+      <li><a href="{% url 'TOS' %}">Terms of Service</a></li>
+      </div>
+      </ul>
+    </div>
 </footer>
 </html>
