@@ -28,18 +28,17 @@ class Restaurant(models.Model):
 
     reviews = models.ManyToManyField(Review)
 
-    def search_restaurants(location, api_key):
-        encoded_key = base64.b64encode(api_key.encode())
-        decoded_key = encoded_key.decode('utf-8')
-        url = "https://api.yelp.com/v3/businesses/search"
+    def get_reviews_by_id(business_id, api_key):
+        url = f"https://api.yelp.com/v3/businesses/{business_id}/reviews"
+
         headers = {
-        "Authorization": f"Bearer {api_key}" 
-    }
-        params = {
-        "term": "restuarants",
-        "location": location,
-        "limit": 15  # Adjust the limit as needed
-    }
+            "Authorization": f"Bearer {api_key}"
+        }    
+
+        response = requests.get(url, headers=headers)
+        reviews = response.json()["reviews"]
+
+    return reviews
 
         response = requests.get(url, headers=headers, params=params)
 
