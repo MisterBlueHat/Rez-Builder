@@ -6,7 +6,6 @@ __pycache__/
 db.sqlite3
 media
 .github
-db.sqlite3
 **/.vscode/
 myapp/__pycache__/__init__.cpython-312.pyc
 myapp/__pycache__/admin.cpython-312.pyc
