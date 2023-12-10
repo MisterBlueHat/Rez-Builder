@@ -8,7 +8,7 @@ headers = {
     "Authorization": 'Bearer GTqVWtOkg5Wx8XtcLeNoSmmv06jZ-gicMXW_mSfLD2ALgj3OL6jW300b9m3lOaIhoDLcMdSMdExM3vOJAgqwGiwiKtRpcD-7Y-3lyjSEF7Jzk3bGeSEwn0tS9xNAZXYx'
 }
 
-def setParams(city):
+def setParams(city, max_distance, price):
     #Parameters for restaurant selection
     url = "https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20"
     parameters = {
@@ -16,18 +16,19 @@ def setParams(city):
         "latitude": "",
         "longitude": "",
         "term": "",
-        "radius": "",
+        "radius": max_distance,
         "categories": "",
         "locale": "",
-        "price": "",
+        "price": price,
     }
     for param in parameters:
         if parameters[param] != "":
             url = url + "&" + param + "=" + parameters[param]
+    print(url)
     return url
 
-def response(city):
-    url = setParams(city)
+def response(city, max_distance, price):
+    url = setParams(city, str(int(max_distance) * 1609), price)
     response = requests.get(url, headers=headers).json()
     
     for r in response["businesses"]:
