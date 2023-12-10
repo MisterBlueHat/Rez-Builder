@@ -18,8 +18,8 @@ def filter(request):
 		Restaurant.objects.all().delete()
 		response(request.POST.get('city'))
 		context ={
-		'form' : InputForm(),
-		'restaurants' : Restaurant.objects.all()
+			'form' : InputForm(),
+			'restaurants' : Restaurant.objects.all()
 		}
 	else:
 		context ={
@@ -62,7 +62,7 @@ def var_test(request):
 	return HttpResponse(template.render(request))
 
 # views.py 
-
+'''
 from .models import Restaurant
 
 def restaurant_reviews(request, restaurant_id):
@@ -76,7 +76,7 @@ def restaurant_reviews(request, restaurant_id):
     }
     
     return render(request, 'reviews.html', context)
-
+'''
 def About(request):
 	template = loader.get_template("templates/About.html")
 	return HttpResponse(template.render())
@@ -88,7 +88,8 @@ def TOS(request):
 def Contact(request):
 	template = loader.get_template("templates/CONTACT.html")
 	return HttpResponse(template.render())
-	
+'''
 def landing(request):
     restaurant = Restaurant.objects.get(pk=1) 
     return render(request, 'landing.html', {'reviews': restaurant.reviews.all()})
+'''
