@@ -87,11 +87,11 @@ def About(request):
 	return HttpResponse(template.render())
 
 def TOS(request):
-	template = loader.get_template("templates/TOS.html")
+	template = loader.get_template("templates/tos.html")
 	return HttpResponse(template.render())
 
 def Contact(request):
-	template = loader.get_template("templates/CONTACT.html")
+	template = loader.get_template("templates/Contact.html")
 	return HttpResponse(template.render())
 
 def restaurant_detail(request, id):
