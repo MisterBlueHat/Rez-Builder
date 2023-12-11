@@ -101,6 +101,13 @@ body {
     font-size: 30px;
     height: auto;
 }
+
+#flexbox .flexitem p {
+    background: grey;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
 .flexitem img {
     flex: 1 1 0;
     width: 30%;
@@ -137,7 +144,6 @@ body {
     margin-top: 10px;
 
 }
-
 /* Social Media Footer Links Font Awesome*/
 .fa {
     display: inline-block;
