@@ -26,7 +26,8 @@ class Restaurant(models.Model):
         # Implement your own logic to retrieve reviews from a review platform
         return "No reviews yet"
 
-    reviews = models.ManyToManyField(Review)
+reviews = models.ManyToManyField(Review)
+
 
     def get_reviews_by_id(business_id, api_key):
         url = f"https://api.yelp.com/v3/businesses/{business_id}/reviews"
@@ -70,14 +71,8 @@ class Restaurant(models.Model):
         else:
             print(f"Error: {response.status_code} - {response.text}")
 
+search_restaurants(location, api_key) # This function will perform search query results
+
     if __name__ == "__main__":
         api_key = "UgaYzODUIn9ve-se0d6J1eKoFFYNyrFtkBybJ0JDJ1jeKNQG_6xOUN_BL30cleMd897fM4YF-wFCVq-Cf0PMOV8eeiAAZfbkeO2F5W_DWHaTY1YvSU5VjlJq2Ss4ZXYx"
         location = "Boston" # I added a location to perform search query results
-        search_restaurants(location, api_key) # This function will perform search query results
-
-class Review(models.Model):
-    text = models.TextField()
-    rating = models.IntegerField() 
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
-        
-logger = logging.getLogger(__name__)
