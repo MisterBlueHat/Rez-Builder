@@ -2,10 +2,13 @@ import requests
 import json
 from myapp.scripts.restaurant import Restaurant as res 
 from myapp.models import Restaurant 
+import os
+
+API_KEY = os.environ.get('API_KEY')
 
 headers = {
     "accept": "application/json",
-    "Authorization": 'Bearer GTqVWtOkg5Wx8XtcLeNoSmmv06jZ-gicMXW_mSfLD2ALgj3OL6jW300b9m3lOaIhoDLcMdSMdExM3vOJAgqwGiwiKtRpcD-7Y-3lyjSEF7Jzk3bGeSEwn0tS9xNAZXYx'
+    "Authorization": 'Bearer ' + API_KEY
 }
 
 def setParams(city, max_distance, price):
