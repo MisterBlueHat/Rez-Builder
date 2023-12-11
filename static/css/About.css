@@ -41,10 +41,18 @@ html, body{
     border: solid white 2px;
 }
 
-#flexbox .flex p {
-    font-size: 22px;
-    overflow-y: scroll;
+#flexbox .flex .desc {
+    font-size: 21px;
     max-height: 100px;
+    overflow-y: scroll;
+}
+#flexbox::-webkit-scrollbar{
+    width: 2px;
+    background-color: white;
+}
+
+#flexbox::-webkit-scrollbar-thumb{
+    background-color: red;
 }
 /* Social Media Footer Links Font Awesome*/
 .fa {
