@@ -4,7 +4,6 @@ from myapp.scripts.yelp import response
 from myapp.scripts.reviews import response as review_response
 from myapp.models import Restaurant
 from .forms import InputForm 
-from .restaurant_request import get_reviews_by_id
 
 import random
 import requests
