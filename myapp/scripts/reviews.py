@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-API_KEY = os.environ.get('API_KEY')
+API_KEY = os.environ.get('API_KEY') or "GTqVWtOkg5Wx8XtcLeNoSmmv06jZ-gicMXW_mSfLD2ALgj3OL6jW300b9m3lOaIhoDLcMdSMdExM3vOJAgqwGiwiKtRpcD-7Y-3lyjSEF7Jzk3bGeSEwn0tS9xNAZXYx"
 
 headers = {
     "accept": "application/json",
