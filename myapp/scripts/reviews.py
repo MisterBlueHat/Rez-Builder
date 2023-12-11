@@ -13,7 +13,7 @@ def response(id):
     for r in response["reviews"]:
         reviews[r["id"]] = {
             "text" : r["text"], 
-            "picture" : r["user"]["image_url"], 
+            "picture" : r["user"]["image_url"] or "../static/images/profile.jpg", 
             "name" : r["user"]["name"], 
             "rating" : r["rating"], 
             "date" : r["time_created"], 
