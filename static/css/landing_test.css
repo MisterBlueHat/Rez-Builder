@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+.profile_pic {
+    align-items: center;
+}
+  
 .header  {
     font-size: 40px;
     top: 0;
