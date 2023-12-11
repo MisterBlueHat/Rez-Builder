@@ -4,6 +4,7 @@ from myapp.scripts.yelp import response
 from myapp.scripts.reviews import response as review_response
 from myapp.models import Restaurant
 from .forms import InputForm 
+from django.core.paginator import Paginator
 
 import random
 import requests
@@ -92,6 +93,18 @@ def TOS(request):
 def Contact(request):
 	template = loader.get_template("templates/CONTACT.html")
 	return HttpResponse(template.render())
+
+def restaurant_detail(request, id):
+
+    reviews = Restaurant.objects.get(id=id).review_set.all()  
+
+    page_num = request.GET.get('page', 1)
+    p = Paginator(reviews, 5) # 5 reviews per page
+    page = p.page(page_num)
+
+    context = {'page': page}
+    return render(request, 'detail.html', context)
+
 '''
 def landing(request):
     restaurant = Restaurant.objects.get(pk=1) 
