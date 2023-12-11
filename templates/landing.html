@@ -4,22 +4,12 @@
 
 <head>
 	<link rel="stylesheet" href="{% static 'css/landing_test.css' %}">
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMiDBzFBTy41UHfZqx3q_16kZgA-DcqXc&callback=initMap" type="text/javascript"></script>
+	<script src="https://kit.fontawesome.com/6c1512dafc.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="../static/images/logo.png">
 
 </head>
 <title>Landing</title>
-<header class="header">
-	<a href="{% url 'home' %}" class="logo">Rez-Builder</a> 
-	<nav class="navbar">
-		<a href="{% url 'home' %}">Home</a>
-		<a href="{% url 'About' %}">About</a>
-		<a href="{% url 'Contact' %}">Contact</a>
-		<a href="{% url 'TOS' %}">Terms of Service</a>
-	</nav>
-
-</header>
 <body>
 	<div id="flexbox">
 		<div class ="flexitem"> 
@@ -47,7 +37,7 @@
 						<img src="{{value.picture}}" class="profile_pic">
 						<h2>{{value.name}}</h2>
 						<h2>{{value.text}}</h2>
-						<h2><strong style="color: red;">{{value.rating}}</strong></h2>
+						<h2 id="rating"><strong>Rating {{value.rating}}/5 </strong></h2>
 						<h2>{{value.date}}</h2>
 					</div>
 				{% endfor %}
@@ -57,23 +47,24 @@
 						<a href="?page={{ page.previous_page_number }}">&laquo;</a> 
 					{% endif %}
 				</div>
-
-			<!--<div id="map">
-					<script>
-					// Initialize the map
-					function initMap() {
-					// Specify the center and zoom level
-					var mapOptions = {
-						center: { lat: 42.3601, lng: -71.0589},
-						zoom: 12
-					};
-				
-					// Create the map
-					var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-					}
-					</script>
-			</div> -->
 		</div> 
 	</div>
 </body>
+<footer>
+    <div class="footer-container">
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+          <li>&copy; 2023 RezBuilder. All rights reserved.</li>
+          <div class="nav">
+            <li><a href="{% url 'home' %}">Home</a></li>
+		    <li><a href="{% url 'About' %}">About</a></li>
+		    <li><a href="{% url 'Contact' %}">Contact</a></li>
+		    <li><a href="{% url 'TOS' %}">Terms of Service</a></li>
+        </div>
+        </ul>
+      </div>
+</footer>
 </html>
