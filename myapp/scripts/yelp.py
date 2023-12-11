@@ -11,6 +11,7 @@ headers = {
     "Authorization": 'Bearer ' + API_KEY
 }
 
+#test
 def setParams(city, max_distance, price):
     #Parameters for restaurant selection
     url = "https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20"
