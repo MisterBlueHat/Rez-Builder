@@ -51,6 +51,14 @@
 						<h2>{{value.date}}</h2>
 					</div>
 				{% endfor %}
+
+				<div class="pagination">
+					{% if page.has_previous %}
+						<a href="?page={{ page.previous_page_number }}">&laquo;</a> 
+					{% endif %}
+
+				</div>
+
 			<!--<div id="map">
 					<script>
 					// Initialize the map
