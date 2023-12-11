@@ -105,6 +105,10 @@ def restaurant_detail(request, id):
     context = {'page': page}
     return render(request, 'detail.html', context)
 
+def landing(request):
+    restaurants = Restaurant.objects.all() 
+    return render(request, 'landing.html', {'restaurants': restaurants})
+
 '''
 def landing(request):
     restaurant = Restaurant.objects.get(pk=1) 
