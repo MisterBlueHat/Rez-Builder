@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("/static/images/food.jpg");
+    background-image: url("/static/images/food.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -9,16 +11,18 @@ body{
 }
 
 .terms-box{
-    max-width: 500px;
-    background-color: #333;
+    margin: 20px;
+    margin-top: 60px;
+    background-color: grey;
     color: white;
     font-family: "Montserrat";
-    padding: 60px 30px;
+    position: relative;
+    z-index: 1;
 }
 .terms-text{
-    margin-top: -30px;
+    margin-top: 0;
     padding: 0 20px;
-    height: 400px;
+    height: 500px;
     overflow-y: auto;
     font-size: 14px;
     font-weight: 500;
@@ -39,7 +43,9 @@ body{
     text-align: center;
     padding: 0 40px;
 }
-
+.terms-text h2{
+  color:red;
+}
 .terms-box h4 span{
     color: red;
 }
@@ -71,12 +77,81 @@ body{
 }
 
 .logo{
-    margin-left: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  margin-top: -50px ;
+  z-index: 0;
 }
-
 .btn:hover{
     opacity: .5;
+}
+
+/* Social Media Footer Links Font Awesome*/
+.fa {
+  display: inline-block;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  width: 24px;
+}
+
+.fa-facebook {
+  background-color: #3b5998;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-twitter {
+  background-color: #55acee;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-instagram {
+  background-color: #e4405f;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-youtube {
+  background-color: #cd201f;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+
+}
+/*Style rules for Social Media links*/
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+}
+
+.nav li a{
+  text-decoration: none;
+  margin-top: 10px;
 }

@@ -35,11 +35,12 @@ html, body{
 
 .filter-box{
     float: left;
-    width: 25%;
+    width: 10%;
     padding: 20px;
-    height: 240px;
+    height: 200px;
     background-color:grey;
     margin-left: 0;
+    margin-left: 50px ;
     margin-top: 10px;
     border: 1px solid black;
 }
@@ -56,23 +57,17 @@ html, body{
 	justify-content: start;
 	margin-top: 10px;
 }
-.restaurants{
-    float: right;
-    width: 40%;
-    max-height: 70%;
-    padding: 20px;
-    justify-content: space-between;
-    border: 4px solid black;
-    overflow-y: scroll;
-}
-
 
 .restaurants h1{
-	text-align: center;
-    border: 3px solid green;
+	  text-align: center;
     color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
+.restaurants h3{
+  color: white;
+}
 .fa {
     display: inline-block;
     font-size: 24px;
@@ -139,3 +134,42 @@ html, body{
     text-decoration: none;
     margin-top: 10px;
   }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    border: 4px solid black;
+    overflow-y: scroll;
+    background: grey;
+    margin-right: 10px;
+    margin-top: 30px;
+    max-height: 630px;
+}
+
+  .restaurants .RI {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 12px;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  .restaurants .RI .RN h3{
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .restaurants .RI .RA h3{
+    vertical-align: center;
+  }
+
+  .restaurants .RI .RC h3 {
+    width: 150px;
+    text-align: right;
+  }
+

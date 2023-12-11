@@ -1,82 +1,122 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-.header  {
-    font-size: 40px;
-    top: 0;
-    left: 0;
-    position: fixed; 
-    width: 100%;
-    color: rgb(0, 0, 0);
-    font-family: 'Work Sans', sans-serif;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-
 }
 
-.logo {
-    font-size: 32px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-
-.navbar a {
-    position: relative;
-    font-size: 24px;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-
-}
-
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
-}
-
-.navbar a:hover::before {
-    width: 100%;
-}
-
-
-body, html {
-    background: url("/static/images/food.jpg") no-repeat center fixed;
+html, body{
+    background-image: url("../images/food.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
     height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+.logo{
+  text-align: left;
+  flex-wrap: wrap;
+  display: flex;
+  max-height: 360px;
+  max-width: 600px;
 }
 
 #flexbox {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding-bottom: 100px;
+    margin-top: -60px;
+    padding-bottom: -25px;
+    background: black;
 }
 
 #flexbox .flex {
-    margin-top: 43px;
     flex: 1;
     background-color: transparent;
     text-align: center;
     color: white;
     font-size: 30px;
-    border: 2px solid white;
-
+    border: 2px solid black;
+    max-height: 600px;
+    padding-bottom: 17px;
+    border: solid white 2px;
 }
 
+#flexbox .flex p {
+    font-size: 22px;
+    overflow-y: scroll;
+    max-height: 100px;
+}
+/* Social Media Footer Links Font Awesome*/
+.fa {
+    display: inline-block;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    width: 24px;
+    background: white;
+}
+  
+.fa-facebook {
+    background-color: #3b5998;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+.fa-twitter {
+    background-color: #55acee;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.fa-instagram {
+    background-color: #e4405f;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.fa-youtube {
+background-color: #cd201f;
+border-radius: 50%;
+color: #fff;
+}
+
+.footer-container {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+/*Style rules for Social Media links*/
+
+.social-icons {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.social-icons li {
+display: inline-block;
+margin: 0 10px;
+}
+
+.social-icons li a {
+color: #fff;
+display: block;
+font-size: 20px;
+}
+
+.nav li a{
+text-decoration: none;
+margin-top: 10px;
+}
+
+#flexbox .flex img {
+    max-height: 240px;
+    max-width: 300px;
+}

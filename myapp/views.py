@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
 from myapp.scripts.yelp import response
+from myapp.scripts.reviews import response as review_response
 from myapp.models import Restaurant
 from .forms import InputForm 
 from .restaurant_request import get_reviews_by_id
@@ -17,10 +18,10 @@ def home(request):
 def filter(request):
 	if request.POST:
 		Restaurant.objects.all().delete()
-		response(request.POST.get('city'))
+		response(request.POST.get('city'), request.POST.get('max_distance'), request.POST.get('price'))
 		context ={
-		'form' : InputForm(),
-		'restaurants' : Restaurant.objects.all()
+			'form' : InputForm(),
+			'restaurants' : Restaurant.objects.all()
 		}
 	else:
 		context ={
@@ -34,6 +35,8 @@ def landing(request):
 	template = loader.get_template("templates/landing.html")
 	rest_id = request.GET.get('id', '')
 	rest_pick = Restaurant.objects.get(pk=rest_id)
+	review = review_response(rest_id)
+	print(review)
 	context = {
 		'rest_name': rest_pick.name,
 		'rest_city': rest_pick.city,
@@ -42,6 +45,7 @@ def landing(request):
 		'rest_phone': rest_pick.phone,
 		'rest_addr': rest_pick.address,
 		'rest_img': rest_pick.image,
+		'rest_reviews' : review
 	}
 	return HttpResponse(template.render(context,request))
 
@@ -63,6 +67,21 @@ def var_test(request):
 	return HttpResponse(template.render(request))
 
 # views.py 
+'''
+from .models import Restaurant
+
+def restaurant_reviews(request, restaurant_id):
+    restaurant = Restaurant.objects.get(id=restaurant_id)
+    reviews = restaurant.Reviews(restaurant_id)
+    
+    reviews_data = reviews.get_reviews()
+    
+    context = {
+        'reviews': reviews_data
+    }
+    
+    return render(request, 'reviews.html', context)
+'''
 def About(request):
 	template = loader.get_template("templates/About.html")
 	return HttpResponse(template.render())
@@ -74,24 +93,8 @@ def TOS(request):
 def Contact(request):
 	template = loader.get_template("templates/CONTACT.html")
 	return HttpResponse(template.render())
-
+'''
 def landing(request):
-    business_id = "someId" 
-    api_key = "apiKey"
-
-    reviews = get_reviews_by_id(business_id, api_key)
-
-    context = {
-        "reviews": reviews
-    }
-
-    return render(request, "landing.html", context)
-
-def landing_error(request):
-    try:
-        # Error handling code to display landing page
-        return render(request, 'landing.html')
-    except Exception as e:
-        logger.error("Error loading landing page", exc_info=True)
-        return HttpResponseServerError("Oops, something went wrong. Please try again later.")
-
+    restaurant = Restaurant.objects.get(pk=1) 
+    return render(request, 'landing.html', {'reviews': restaurant.reviews.all()})
+'''
